@@ -21,29 +21,27 @@
         <aside>
             <nav>
                 <div class="nav-buttons">
-                    <form>
-                    <input type="text" class="search" placeholder="Search...">
-                    <img src="images/icons/magnifying-glass-icon.png" class="mag">
+                        <div class="mag"><img src="images/icons/magnifying-glass-icon.png"></div>
+                        <input type="text" class="search" placeholder="Search...">
                     <input type="button" class="log-in" value="LOG IN">
                     <input type="button" class="sign-up" value="SIGN UP">
-                    </form>
                 </div>
                 <div class="menu">
-                    <h2>MENU</h2>
+                    <p>MENU</p>
                     <ul>
-                        <li>
+                        <li class="homepage">
                             <a href="#">Homepage</a>
                         </li>
-                        <li>
+                        <li class="Generic">
                             <a href="#">Generic</a> 
                         </li>
-                        <li>
+                        <li class="Contact-us-menu">
                             <a href="#">Contact us</a>   
                         </li>
                     </ul>
                 </div>
                 <div class="get-in-touch">
-                    <h2>GET IN TOUCH</h2>
+                    <p>GET IN TOUCH</p>
                     <ul>
                         <li>
                             <img src="images/Icons/Icon-envelope.png">
@@ -58,58 +56,77 @@
                             <a href="address">123 fake road #2000 Rosario, Argentina</a>
                         </li>
                     </ul>
+                </div>
             </nav>
         </aside>
         <main>
-            <section>
-                <div class="what-is-trackgenix">
+            <section class="article-1">
+                <article class="what-is-trackgenix">
                     <h2>What is Trackgenix</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                    <img src="images/images/what-is-trackgenix-img.jpg">
-                </div>
-                <div class="our-history">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, iure esse
+                        nesciunt molestiae a facere modi pariatur numquam sit totam, veritatis accusamus. 
+                        Ullam quo nesciunt excepturi sit dolore. Dolorum, ab.</p>
+                    <img src="images/images/what-is-trackgenix-img.jpg" id="img-1">
+                    </article>
+                <article class="our-history">
                     <h2>Our History</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                    <img src="images/images/our-history-img.png">
-                </div>
+                    <img src="images/images/our-history-img.png" id="img-2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, iure esse
+                        nesciunt molestiae a facere modi pariatur numquam sit totam, veritatis accusamus. 
+                        Ullam quo nesciunt excepturi sit dolore. Dolorum, ab.</p>
+                    </article>
             </section>
-            <section>
-                <h2>FEATURES</h2>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste dolor, numquam voluptatem optio 
-                </P>
+            <section class="article-2">
+                <article class="features">
+                    <h2>FEATURES</h2>
+                    <P>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Reiciendis, iure esse nesciunt molestiae a facere modi pariatur
+                        numquam sit totam, veritatis accusamus. 
+                        Ullam quo nesciunt excepturi sit dolore. Dolorum, ab. 
+                    </P>
+                </article>
                 <ol>
                     <li type="disc">Item 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corpor</li>
                     <li type="disc">Item 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corpor</li>
                     <li type="disc">Item 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corpor</li>
                     <li type="disc">Item 4: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corpor</li>
                 </ol>
+                </article>
             </section>
-            <section>
+            <section id="why">
                 <h2>WHY TRACKGENIX?</h2>
-                <div class="why-trackgenix1">
+                <div class="why-content">
+                    <div class="why-box">
                     <h3>Subheader</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="images/images/why-trackgenix1.png">
                     <input type="button" value="Learn more">
+                    </div>
+                    <img src="images/images/why-trackgenix1.png"> 
                 </div>
-                <div class="why-trackgenix2">
+                <div class="why-content">
+                    <div class="why-box-left">
                     <h3>Subheader</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Learn more">
+                    </div>
                     <img src="images/images/why-trackgenix2.png">
-                    <input type="button" value="Learn more">
                 </div>
-                <div class="why-trackgenix3">
+                <div class="why-content">
+                    <div class="why-box">
                     <h3>Subheader</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Learn more">
+                    </div>
                     <img src="images/images/why-trackgenix3.png">
-                    <input type="button" value="Learn more">
                 </div>
-                <div class="why-trackgenix4">
+                <div class="why-content">
+                    <div class="why-box-left">
                     <h3>Subheader</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="images/images/why-trackgenix4.png">
                     <input type="button" value="Learn more">
+                    </div>
+                    <img src="images/images/why-trackgenix4.png">
                 </div>
                 <article>
                     <h3>CONTACT US</h3>
@@ -149,7 +166,7 @@
                 </article>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <h3>TRACKGENIX</h3>
             <div class="products">
                 <h4>Products</h4>
