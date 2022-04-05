@@ -1,11 +1,25 @@
 > **NOTE:**
->This project is yet in process
+>This project is yet in process.
 
 # TRACKGENIX SA project
 
 ```
 This is a project that belowns to Trackgenix SA, who provide developer services to other companies. This web system facilitates the recording of hours worked by each employee, in each project and work team. 
 ```
+
+# Week 02 #
+
+HTML code was write to made the Landing Page structure.
+This contains:
+> Header
+> Sidebar
+> Content
+> Footer 
+
+# Week 03 #
+
+CSS was made to give style to the web, corresponding to the HTML structure.
+
 
 ## Repository ##
 
