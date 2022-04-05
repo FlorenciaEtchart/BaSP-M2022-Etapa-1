@@ -4,7 +4,7 @@ aside {
   height: 810px;
   top: 0px;
   left: 0px;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Roboto', sans-serif;
   font-weight: regular;
   color: #373867; 
@@ -21,16 +21,19 @@ aside {
     margin-top: 25px;
     margin-left: 35px;
     width: 200px ;
-    height: 20px;
+    height: 22px;
+    border-radius: 4%;
+    border-style: none;
   }
 
 .log-in {
   position: relative;
   margin-top: 5px;
   margin-left: 52px;
-  width: 80px ;
-  height: 25px;
+  width: 75px ;
+  height: 22px;
   border-radius: 10%;
+  border-style: none;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -41,9 +44,10 @@ aside {
 .sign-up {
   margin-top: 5px;
   margin-left: 6px;
-  width: 80px ;
-  height: 25px; 
+  width: 75px ;
+  height: 22px; 
   border-radius: 10%;
+  border-style: none;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -59,8 +63,7 @@ aside {
   padding: 2px;
   border-bottom: 1px solid #49a37b;
   text-transform: uppercase;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -68,8 +71,6 @@ aside {
   color: #373867;
   margin-left:36px;
   padding: 2px;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
 }
 
 li a {
@@ -86,8 +87,7 @@ li a {
   border-bottom: 1px solid #49a37b;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .get-in-touch ul li {
@@ -96,17 +96,15 @@ li a {
   margin-left:36px;
   padding: 1px;
   text-align: left;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+
 }
 
 .header {
-  overflow: hidden;
   display: inline-block;
   height: 90px;
-  width: 1145px;
+  width: 1050px;
   margin-left: 290px;
-  background-color: #ff3fff;
+  background-color: #ffffff;
 }
 
 .header > h1 {
@@ -131,11 +129,14 @@ li a {
 }
 
 main {
-  display: inline-block;
-  margin-left: 304px;
+  margin-left: 290px;
+  margin-right: 10px;
   margin-top: 20px;
+  line-height: 20px;
   font-family: 'Roboto', sans-serif;
-  color: #373867
+  font-size: 15px;
+  color: #373867;
+  background-color:#a36549;
 }
 /*
 .what-is-trackgenix{
@@ -199,9 +200,8 @@ main {
   position: absolute;
   top: 120px;
   left: 350px;
-  font-family: 'Roboto', sans-serif;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: bold;
   color: #49a37b;
 }
 .what-is-trackgenix > p {
@@ -210,69 +210,61 @@ main {
   width: 350px;
   height: 200px;
   left: 350px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  font-weight: 350px;
   color: #373867;
 }
 #img-1 {
   position: relative;
   top: 60px;
-  width: 350px;
+  width: 370px;
   height: 200px;
   left: 500px;
   border-radius: 15px;
 }
 
 .our-history > h2 {
-  position: absolute;
-  top: 400px;
-  left: 900px;
-  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 500px;
   font-size: 25px;
-  font-weight: 600px;
+  font-weight: bold;
   color: #49a37b;
+
 }
 
 #img-2 {
   position: absolute;
   top: 460px;
   left: 350px;
-  width: 350px;
+  width: 370px;
   height: 200px;
   border-radius: 15px;
 }
 .our-history > p {
   position: relative;
-  top: 200px;
+  top: 30px;
   width: 350px;
   height: 200px;
   left: 500px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  font-weight: 350px;
   color: #373867;
 
 }
 
 .features > h2 {
-  padding-top: 190px;
-  padding-left: 30px;
+  margin-top: 120px;
   width: 900px;
   border-bottom: 2px solid #373867;
-  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+  margin-left: 20px;
   font-size: 25px;
-  font-weight: 600;
   color: #373867;
+  font-weight: bold;
 }
 
 .features > p {
+  width: 900px;
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 30px;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
   font-weight: 600px;
   color: #373867;
 }
@@ -281,63 +273,110 @@ main {
   padding-top: 5px;
   margin-left: 50px;
   padding-left: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
   font-weight: 600px;
   line-height: 20px;
   color: #373867;
 }
 
+
 #why > h2 {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   padding-top: 60px;
-  padding-left: 30px;
   width: 900px;
   border-bottom: 2px solid #373867;
-  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+  margin-left: 20px;
   font-size: 25px;
-  font-weight: 600;
   color: #373867;
+  font-weight: bold;
 }
-
 .why-content {
   display: inline-block;
-  width: 100%;
-  height: 50px;
+  width: 85%;
+  padding-top: 50px;
+  margin-left: 30px;
 }
 
 .why-content img {
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 160px;
+  margin-left:10px;
+  margin-right: 10px;
 }
 
 .why-box {
-  float: right;
-  width: 600px;
-  height: 200;
+  float: right; 
+  width: 350px;
+  height: 200px;
+  margin-left: 110px;
+  margin-right: 110px;
+  text-align: center;
+}
+
+.why-box-left {
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 60px;
+  text-align: center;
 }
 
 .why-box p {
   padding-top: 15px;
-  font-size: 17px;
-  line-height: 15px;  
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.why-box-left p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 .why-box h3 {
   margin-top: 10px;
-  padding-left: 70px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.why-box-left h3 {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  text-align: center;
   font-size: 17px;
   font-weight: bold;
 }
 
 .why-box input {
-  width: 100px;
-  height: 30px;
-  margin-top: 40px;
-  margin-left: 60px;
-
+  width: 60px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 9px;
+  font-weight: bold;
+  background-color: #AACE9B;
+  color: #373867; 
 }
 
+.why-box-left input {
+  width: 60px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 9px;
+  font-weight: bold;
+  background-color: #AACE9B;
+  color: #373867; 
 
 }
 
