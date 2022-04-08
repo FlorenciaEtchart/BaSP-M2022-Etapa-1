@@ -1,0 +1,74 @@
+nav {
+    display: none;
+    background-color: b1b2b6;
+    opacity: 0.9px;
+    justify-content: center;
+}
+
+aside p {
+    font-size: 15px;
+  }
+  
+  aside li {
+    font-size: 15px;
+  }
+  
+  .search {
+    width: 230px;
+    height: 40px;
+    margin: 35px;
+    padding: 5px 20px;
+    background: #FFFFFF;
+    background-image: url('../images/Icons/magnifying-glass-icon.png');
+    background-position: 180px;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 3px;
+    color: #373867;
+  }
+  
+  nav input::placeholder {
+    font-weight: 300;
+    color: #373867;
+    opacity: 0.5;
+  }
+  
+  nav input::log-in {
+    width: 95px;
+    height: 35px;
+    padding: 10px 27px;
+    background-color: #49a371;
+    border-radius: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff
+  }
+  
+  aside sign-up {
+    width: 102px;
+    height: 35px;
+    padding: 10px 27px;
+    background-color: #373867;
+    border-radius: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff
+  }
+
+  .menu > p {
+    border-bottom: 1.5px solid #49a371;
+    max-width: 232px;
+    text-transform: uppercase; 
+     
+  }
+
+  .get-in-touch > p {
+    border-bottom: 1.5px solid #49a371;
+    max-width: 232px;
+    text-transform: uppercase;
+  }
+  
+    
