@@ -2,11 +2,14 @@
 @media (min-width: 480px) {
 */
 
-.what-is-trackgenix {
+.first-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 85%;
-    margin: 3% 10%;
+    margin: 30px;
+    background-color: #fff;
+
 }
 
 .first-container > h2 {
@@ -14,16 +17,44 @@
 }
 
 .first-container > p {
+    padding: 15px 30px;
+    line-height: 140%;;
     text-align: center;
 }
 
 #img-1 {
-    display: flex;
     width: 328px;
     height: 134px;
-    align-self: center;
     border-radius:10px;
+}
 
+
+
+
+.our-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 30px;
+    background-color: #fff;
+
+}
+
+.our-history > h2 {
+    text-align: center;
+}
+
+.our-history > p {
+    padding: 15px 30px;
+    line-height: 140%;;
+    text-align: center;
+}
+
+#img-2 {
+    width: 328px;
+    height: 134px;
+    border-radius:10px;
 }
 
 
