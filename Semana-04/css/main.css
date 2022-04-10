@@ -99,11 +99,17 @@
 .first-container-why {
     display: flex;
     flex-direction: column-reverse;
+    background-color: aqua;
 }
-.why-trackgenix {
+.why-trackgenix h2 {
+    text-align: center;
     border-bottom: 4px solid #373867;
-    margin-bottom: 15px;
     max-width: 85%;
+}
+
+.why-trackgenix h3 {
+    text-align: center;
+    font-size: 16px;
 }
 
 .odd-box {
@@ -113,13 +119,73 @@
     padding: 15px 5px;
     text-align: center;
     line-height: 140%;
-    background-color: blueviolet;
+}
+
+.odd-box p {
+    padding: 10px 35px 15px 35px;
+    line-height: 140%;
+    text-align: center;
+    font-size: 14px;
 }
 
 #odd-img-1 {
     display: flex;
-    padding: 31px 102px 13px 102px;
-   
+    padding: 31px 102px 13px 102px; 
+}
+
+
+
+
+.second-container-why {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(255, 0, 179);
+}
+
+.even-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px;
+    text-align: center;
+    line-height: 140%;
+}
+
+.even-box p {
+    padding: 10px 35px 15px 35px;
+    line-height: 140%;
+    text-align: center;
+    font-size: 14px;
+}
+
+#even-img-1 {
+    display: flex;
+    padding: 31px 102px 13px 102px; 
+}
+
+
+
+.third-container-why {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(0, 255, 42);
+}
+
+#odd-img-2 {
+    display: flex;
+    padding: 31px 102px 13px 102px; 
+}
+
+
+.fourth-container-why {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(255, 72, 0);
+}
+
+#even-img-2 {
+    display: flex;
+    padding: 31px 102px 13px 102px; 
 }
 
 

@@ -18,7 +18,6 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
   border-bottom: #373867;
   font-weight: bold;
 }
@@ -56,7 +55,7 @@ li a {
   border-radius: 17px;
 }
 
-.container-why input {
+.general-container-why input {
   width: 60px;
   height: 20px;
   border-style: none;
