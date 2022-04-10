@@ -1,15 +1,3 @@
-@media (min-width: 1024px) {
-  h1 {
-      font-size: 59.96px;
-  }
-  nav {
-      display: flex;
-  }
-  @media (min-width: 480px) {
-    h1 font-size: 50px;
-  }
-}
-
 body{ 
   background-color: #fff;
   color: #373867;
@@ -17,18 +5,16 @@ body{
   font-size: 16px;
 }
 
-
 h1 {
-  max-width: 1015.29px;
-  margin-bottom: 8.36px;
-  margin-left: 62.46px;
-  font-size: 57px;
-  border-bottom: #373867 solid 3.75px;
+  font-size: 50px;
+  border-bottom: #373867 solid 4px;  
 }
+
 
 h2 {
   font-size: 30px;
   font-weight: bold;
+  line-height: 35px;
 }
 
 h3 {
@@ -46,14 +32,10 @@ li a {
   color: #49a73b;
 }
 
-#img-1 {
-  width: 513.99px;
-  height: 312.71px;
-}
 
 #img-2 {
-  width: 434.71px;
-  height: 215.78px;
+  width: 328px;
+  height: 170px;
 }
 
 .article-2 h2 {
