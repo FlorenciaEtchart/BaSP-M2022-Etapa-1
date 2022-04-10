@@ -2,6 +2,9 @@
 @media (min-width: 480px) {
 */
 
+
+/* fisrt section - what is trackgenix and our history*/
+
 .first-container {
     display: flex;
     flex-direction: column;
@@ -9,14 +12,13 @@
     width: 85%;
     margin: 30px;
     background-color: #fff;
-
 }
 
-.first-container > h2 {
+.first-container h2 {
     text-align: center;
 }
 
-.first-container > p {
+.first-container p {
     padding: 15px 30px;
     line-height: 140%;;
     text-align: center;
@@ -30,22 +32,19 @@
 
 
 
-
 .our-history {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     margin: 30px;
-    background-color: #fff;
-
 }
 
-.our-history > h2 {
+.our-history h2 {
     text-align: center;
 }
 
-.our-history > p {
+.our-history p {
     padding: 15px 30px;
     line-height: 140%;;
     text-align: center;
@@ -55,6 +54,34 @@
     width: 328px;
     height: 134px;
     border-radius:10px;
+}
+
+/* second section - features */
+
+.container-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 30px;
+
+}
+.container-features h2 {
+    text-align: center;
+    border-bottom: 4px solid #373867;
+    max-width: 85%;
+}
+
+.container-features p {
+    padding: 15px 5px;
+    line-height: 140%;
+    text-align: center;  
+}
+
+.features-list {
+    padding: 5px 30px;
+    line-height: 140%;
+    align-items: center;
 }
 
 
