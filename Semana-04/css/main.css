@@ -11,7 +11,6 @@
     align-items: center;
     width: 85%;
     margin: 30px;
-    background-color: #fff;
 }
 
 .first-container h2 {
@@ -83,6 +82,48 @@
     line-height: 140%;
     align-items: center;
 }
+
+/* third section - why trackgenix */
+
+/* hole section why trackgenix */
+
+.container-why {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 85%;
+    margin: 30px;
+}
+/* particular section */
+
+.first-container-why {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.why-trackgenix {
+    border-bottom: 4px solid #373867;
+    margin-bottom: 15px;
+    max-width: 85%;
+}
+
+.odd-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px;
+    text-align: center;
+    line-height: 140%;
+    background-color: blueviolet;
+}
+
+#odd-img-1 {
+    display: flex;
+    padding: 31px 102px 13px 102px;
+   
+}
+
+
+
 
 
 

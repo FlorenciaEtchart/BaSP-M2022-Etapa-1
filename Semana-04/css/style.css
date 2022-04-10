@@ -49,3 +49,18 @@ li a {
 #contact-us h3 {
   text-transform: uppercase;
 }
+
+#odd-img-1 , #even-img-1 , #odd-img-2 , #even-img-2 {
+  width: 225px;
+  height: 115px;
+  border-radius: 17px;
+}
+
+.container-why input {
+  width: 60px;
+  height: 20px;
+  border-style: none;
+  background-color: #aace9b;
+  color: #373867;
+  font-size: 9px;
+}
