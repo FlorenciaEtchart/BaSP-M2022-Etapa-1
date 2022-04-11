@@ -1,12 +1,57 @@
-nav {
-    display: none; 
-    background-color: #b1b2b6;
-    opacity: 0.9px;
-    justify-content: center;
+/* media queries 0px */
+
+@media (min-width: 0px) {
+  aside {
+      display: none;
+  }
+}
+
+/* media queries 480px */
+
+@media (min-width: 480px) {
+  aside {
+      display: none;
+  }
+}
+
+/* media queries 768px */
+
+@media (min-width: 768px) {
+  aside {
+      display: none;
+  }
+}
+
+/* media queries 1024px */
+@media (min-width: 1024px) {
+  aside {
+      display: flex;
+      width: 20%;
+      height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  aside {
+      display: fixed;
+      width: 20%;
+      height: 100vh;
+    
+  }
+}
+
+
+.sidebar {
+  display: fixed;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #b1b2b6;
+  height: 100vh;
+
 }
 
 aside p {
-    font-size: 15px;
+  font-size: 15px;
   }
   
   aside li {
@@ -14,10 +59,9 @@ aside p {
   }
   
   .search {
+    align-self: auto;
     width: 230px;
     height: 40px;
-    margin: 35px;
-    padding: 5px 20px;
     background: #FFFFFF;
     background-image: url('../images/Icons/magnifying-glass-icon.png');
     background-position: 180px;
@@ -70,5 +114,7 @@ aside p {
     max-width: 232px;
     text-transform: uppercase;
   }
+
+
   
     
