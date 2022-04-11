@@ -25,14 +25,14 @@
 */
 
 footer h3 {
-    display:none;
+    display: none;
 }
 
 footer .content-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 15px 0px;
+    margin: 25px 5px;
     background-color:#373867;
     color:#ffffff;
 }
@@ -70,4 +70,3 @@ footer ol li a {
     height: 20px;
     padding: 10px;
   }
-  

@@ -29,8 +29,6 @@
     border-radius:10px;
 }
 
-
-
 .our-history {
     display: flex;
     flex-direction: column;
@@ -57,37 +55,42 @@
 
 /* second section - features */
 
-.container-features {
+.features {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
-    margin: 30px;
-
 }
-.container-features h2 {
-    text-align: center;
+
+.features h2 {
     border-bottom: 4px solid #373867;
-    max-width: 85%;
+    align-self: center;
 }
 
-.container-features p {
-    padding: 15px 5px;
+.features p {
+    padding: 15px 20px;
     line-height: 140%;
-    text-align: center;  
+    align-self: center;
+    text-align: center;
 }
 
-.features-list {
-    padding: 5px 30px;
-    line-height: 140%;
+.feature-list {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.feat-list {
+    padding: 5px 40px;
+    line-height: 140%;
+    align-self: center;
+    text-align: center;
 }
 
 /* third section - why trackgenix */
 
 /* hole section why trackgenix */
 
-.container-why {
+.general-container-why {
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -101,13 +104,13 @@
     flex-direction: column-reverse;
     border-bottom: 1px solid #373867;
 }
-.why-trackgenix h2 {
+.general-container-why h2 {
     text-align: center;
     border-bottom: 4px solid #373867;
-    max-width: 85%;
+    width: max-content;
 }
 
-.why-trackgenix h3 {
+.general-container-why h3 {
     text-align: center;
     font-size: 16px;
 }
@@ -132,9 +135,6 @@
     display: flex;
     padding: 31px 102px 13px 102px; 
 }
-
-
-
 
 .second-container-why {
     display: flex;
@@ -199,20 +199,22 @@
 
 */
 
-#contact-us h3 {
+.cont-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-us h3 {
     padding-top: 15px;
     margin-bottom: 20px;
     border-bottom: 4px solid #373867;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    text-transform: uppercase;
     color: #373867;
-}
-.container-contact-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .name {
