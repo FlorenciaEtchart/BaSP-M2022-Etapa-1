@@ -99,7 +99,7 @@
 .first-container-why {
     display: flex;
     flex-direction: column-reverse;
-    background-color: aqua;
+    border-bottom: 1px solid #373867;
 }
 .why-trackgenix h2 {
     text-align: center;
@@ -139,7 +139,7 @@
 .second-container-why {
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(255, 0, 179);
+    border-bottom: 1px solid #373867;
 }
 
 .even-box {
@@ -168,7 +168,7 @@
 .third-container-why {
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(0, 255, 42);
+    border-bottom: 1px solid #373867;
 }
 
 #odd-img-2 {
@@ -180,7 +180,7 @@
 .fourth-container-why {
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(255, 72, 0);
+    border-bottom: 1px solid #373867;
 }
 
 #even-img-2 {
@@ -188,8 +188,108 @@
     padding: 31px 102px 13px 102px; 
 }
 
+/* section contact us */
 
+/*
+.container-contact-us {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+}
 
+*/
+
+#contact-us h3 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #373867;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #373867;
+}
+.container-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px 0px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 15px 0px; 
+}
+
+.contact-form {
+    align-self: center;
+}
+
+.contact-labels {
+    margin: 5px;
+    font-weight: bold;
+}
+
+  .boxes {
+    width: 354px;
+    height: 23px;
+    border: 1px solid #373867;
+    font-size: 12px;
+    border-color: #E0E0E0;
+    border-radius: 3px;
+    color: #373867;
+  }
+  
+  .textarea {
+    width: 354px;
+    height: 78px;
+    border-radius: 3px;
+    border-color: #E0E0E0;
+    color: #373867;
+  }
+  
+  .contact-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 15px;
+      align-items: flex-end;
+
+  }
+  .send-msg {
+    width: 123px;
+    height: 35px;
+    background-color: #AACE9B;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    color:#373867;
+  }
+
+  .reset {
+    width: 82px;
+    height: 35px;
+    background-color: #b1b2b6;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    color:#373867;
+  }
+  
 
 
 

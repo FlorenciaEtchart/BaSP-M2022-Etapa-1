@@ -166,81 +166,78 @@
                 </div>
             </section>
             <article>
-                <div class="container">
                     <div id="contact-us">
                         <h3>contact us</h3>
                     </div>
-                    <form>
-                        <div class="labels">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="boxes">
-                            <input type="text" placeholder="Insert your name" id="name" name="user_name">
-                        </div>
-                        <div class="labels">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="boxes">
-                            <input type="email" placeholder="Insert your email" id="Email" name="user_email">
-                        </div>
-                        <div class="labels">
-                            <label for="browser">Category:</label>
-                        </div>
-                        <div class="boxes">
-                            <select>
-                                <option>
-                                    Quality Assurance
-                                </option>
-                                <option>
-                                    Developer
-                                </option>
-                                <option>
-                                    Project Manager
-                                </option>
-                                <option>
-                                    Human Resources
-                                </option>
-                            </select>
-                        </div>
-                        <div class="textarea">
-                            <textarea class="textarea" placeholder="Write us a message" id="msg" name="msg"></textarea>
-                        </div>
-                        <div class="buttons">
-                            <input class="send-msg" type="button" value="Send message">
-                            <input class="reset" type="button" value="Reset">
-                        </div>
-                    </form>
+                    <div class="container-contact-us">
+                        <form class="contact-form">
+                            <div class="name">
+                                <label class="contact-labels" for="name">Name</label>
+                                <input class="contact-input" type="text" placeholder="Insert your name" id="name" name="user_name">
+                            </div>
+                            <div class="email">
+                                <label class="contact-labels" for="email">Email</label>
+                                <input class="contact-input" type="email" placeholder="Insert your email" id="Email" name="user_email">
+                            </div>
+                            <div class="category">
+                                <label class="contact-labels" for="browser">Category:</label>
+                                <select>
+                                    <option>
+                                        Quality Assurance
+                                    </option>
+                                    <option>
+                                        Developer
+                                    </option>
+                                    <option>
+                                        Project Manager
+                                    </option>
+                                    <option>
+                                        Human Resources
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="textarea">
+                                <textarea class="textarea" placeholder="Write us a message" id="msg" name="msg"></textarea>
+                            </div>
+                            <div class="contact-buttons">
+                                <input class="send-msg" type="button" value="Send message">
+                                <input class="reset" type="button" value="Reset">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </article>
         </main>
         <footer id="last-section">
             <h3>trackgenix</h3>
-            <div class="nav-bar">
-                <h4>Products</h4>
-                <ol start="1">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Downloads</a></li>
-                    <li><a href="#">Integrations</a></li>
-                    <li><a href="#">Extras</a></li>
-                </ol>
-            </div>
-            <div class="nav-bar">
-                <h4>Company</h4>
-                <ol start="1">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Resourses</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ol>
-            </div>
-            <div class="nav-bar">
-                <h4>Support</h4>
-                <ol start="1">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ol>
+            <div class="content-footer">
+                <div class="nav-products">
+                    <h4>Products</h4>
+                    <ol>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Extras</a></li>
+                    </ol>
+                </div>
+                <div class="nav-company">
+                    <h4>Company</h4>
+                    <ol>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Resourses</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ol>
+                </div>
+                <div class="nav-support">
+                    <h4>Support</h4>
+                    <ol>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ol>
+                </div>
             </div>
             <div class="social-media-icons">
                 <a href="#"><img class="social-media-img" src="images/icons/twt-logo.png"></a>
