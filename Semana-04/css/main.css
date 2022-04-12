@@ -1,3 +1,4 @@
+/* --------------------- MOBILE VERSION ----------------------*/
 
 /* fisrt section - what is trackgenix and our history*/
 
@@ -7,7 +8,6 @@
     align-items: center;
     width: 85%;
     margin: 30px;
-
 }
 
 .what-is-trackgenix h2 {
@@ -281,9 +281,10 @@
   }
 
 
-
+/* ------------------------------- DESKTOP VERSION ---------------------------- */
 
 @media (min-width: 1024px) {
+
 /* what is trackgenix section */
 
     main {
@@ -304,6 +305,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: 25px;
     }
     
     .first-container h2 {
@@ -360,6 +362,7 @@
     .features {
         display: flex;
         flex-direction: column;
+        margin-top: 35px;
     }
     
     .features h2 {
@@ -378,6 +381,7 @@
         display: flex;
         align-items: flex-start;
         font-size: 18px;
+        margin-bottom: 35px;
     }
 
 
@@ -387,7 +391,7 @@
         display: flex;
         flex-direction:column;
         align-items: center;
-        width: 85%;
+        width: 100%;
         margin: 30px;
     }
     
@@ -400,6 +404,7 @@
         text-align: center;
         border-bottom: 4px solid #373867;
         width: max-content;
+        margin-bottom: 20px;
         font-size: 30px;
     }
     
@@ -429,8 +434,7 @@
         width: 412px;
         height: 172px;
         display: flex;
-        padding: 31px 102px 13px 102px;
-    
+        margin-top: 20px;
     }
     
     .second-container-why {
@@ -461,7 +465,7 @@
         width: 412px;
         height: 172px;
         display: flex;
-        padding: 31px 102px 13px 102px; 
+        margin-top: 20px; 
     }
     
     .third-container-why {
@@ -474,7 +478,7 @@
         width: 412px;
         height: 172px;
         display: flex;
-        padding: 31px 102px 13px 102px; 
+        margin-top: 20px;
     }
     
     
@@ -488,7 +492,7 @@
         width: 412px;
         height: 172px;
         display: flex;
-        padding: 31px 102px 13px 102px; 
+        margin-top: 20px; 
     }
 
     .general-container-why input {
@@ -510,13 +514,7 @@
     }
 
     .cont-us h3 {
-        padding-top: 15px;
-        border-bottom: 4px solid #373867;
-        text-align:right;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #373867;
+        display: flex;
     }
 
     .name {
@@ -592,15 +590,11 @@
         border-radius: 5px;
         border-style: none;
         color:#373867;
-    }
-
-
-
-    
+    }  
   }
 
 
- 
+ /* -------------------------- LAPTOP VERSION -------------------------- */
 
 
 
