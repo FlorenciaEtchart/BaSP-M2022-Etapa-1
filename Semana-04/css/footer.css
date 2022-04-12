@@ -6,8 +6,7 @@ footer .content-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 25
-    px 5px;
+    margin: 25px 5px;
     background-color:#373867;
     color:#ffffff;
 }
@@ -46,21 +45,28 @@ footer ol li a {
   }
 
   @media (min-width: 1024px) {
-    footer h3 {
+      footer {
+        width: 80%;
+        margin-left: 20%;
+        background-color: aqua;
+      }
+
+    .content.footer {
         display: flex;
+        flex-direction: row;
+        background-color: rgb(221, 161, 81);
+    }
+
+    footer h3 {
         margin-top: 30px;
         font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
+
+        .social-media-img {
+            width: 100px;
+            height: 40px;
+            padding: 10px;
     }
 
-    .desktop-4 {
-        width: 100%;
-        height: 276px;
-        display: flex;
-        justify-content:space-evenly;
-        flex-direction: row;
-        margin-left: 304px;
-        background-color:#373867;
-        color:#ffffff;
   }

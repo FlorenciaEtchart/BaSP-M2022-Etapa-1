@@ -1,23 +1,20 @@
-/* query?????????????
-@media (min-width: 480px) {
-*/
-
 
 /* fisrt section - what is trackgenix and our history*/
 
-.first-container {
+.what-is-trackgenix {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     margin: 30px;
+
 }
 
-.first-container h2 {
+.what-is-trackgenix h2 {
     text-align: center;
 }
 
-.first-container p {
+.what-is-trackgenix p {
     padding: 15px 30px;
     line-height: 140%;;
     text-align: center;
@@ -27,6 +24,7 @@
     width: 328px;
     height: 134px;
     border-radius:10px;
+    margin-left: 30px;
 }
 
 .our-history {
@@ -51,6 +49,7 @@
     width: 328px;
     height: 134px;
     border-radius:10px;
+    margin-left: 30px;
 }
 
 /* second section - features */
@@ -284,20 +283,20 @@
 
 
 
-
-
 @media (min-width: 1024px) {
 /* what is trackgenix section */
 
     main {
-        margin-left: 304px;
+        margin-left: 25%;
+        padding-top: 10%;
     }
+
 
     .first-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 85%;
+        width: 100%;
         margin: 30px;
     }
 
@@ -305,8 +304,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 85%;
-        margin: 30px;   
     }
     
     .first-container h2 {
@@ -315,21 +312,21 @@
     }
     
     .first-container p {
-        padding: 60px;
         line-height: 140%;
         font-size: 16px;
     }
     
     #img-1 {
-        width: 513px;
-        height: 312px;
+        width: 50%;
+        height: 25%;
         border-radius:10px;
     }
+
     .our-history {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 85%;
+        width: 100%;
         margin: 30px;
     }
 
@@ -337,7 +334,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        width: 85%;
+        width: 100%;
         margin: 30px;  
     }
     
@@ -347,14 +344,14 @@
     }
     
     .our-history p {
-        padding: 15px 30px;
+    
         line-height: 140%;
         font-size: 16px;
     }
     
     #img-2 {
-        width: 435px;
-        height: 216px;
+        width: 50%;
+        height: 20%;
         border-radius:10px;
     }
 
@@ -505,13 +502,100 @@
 
     /* section contact us */
 
-    .container-contact-us {
+    
+    .container-cont-us {
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+
+    .cont-us h3 {
+        padding-top: 15px;
+        border-bottom: 4px solid #373867;
+        text-align:right;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #373867;
+    }
+
+    .name {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 0px;
-        background-color: cadetblue;
+        margin: 10px 0px;
     }
+
+    .email {
+        display: flex;
+        flex-direction: column; 
+        margin: 10px 0px;
+    }
+
+    .category {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 15px 0px; 
+    }
+
+    .contact-form {
+        align-self: center;
+    }
+
+    .contact-labels {
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    .boxes {
+        width: 354px;
+        height: 23px;
+        border: 1px solid #373867;
+        font-size: 12px;
+        border-color: #E0E0E0;
+        border-radius: 3px;
+        color: #373867;
+    }
+    
+    .textarea {
+        width: 354px;
+        height: 78px;
+        border-radius: 3px;
+        border-color: #E0E0E0;
+        color: #373867;
+    }
+    
+    .contact-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        align-items: flex-end;
+
+    }
+    .send-msg {
+        width: 123px;
+        height: 35px;
+        background-color: #AACE9B;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-style: none;
+        color:#373867;
+    }
+
+    .reset {
+        width: 82px;
+        height: 35px;
+        background-color: #b1b2b6;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-style: none;
+        color:#373867;
+    }
+
+
+
     
   }
 
