@@ -22,11 +22,11 @@
 }
 
 #img-1 {
+    align-self: center;
     width: 328px;
     height: 134px;
-    border-radius:10px;
     margin-left: 30px;
-    align-self: center;
+    border-radius:10px;
 }
 
 .our-history {
@@ -50,8 +50,8 @@
 #img-2 {
     width: 328px;
     height: 134px;
-    border-radius:10px;
     margin-left: 30px;
+    border-radius:10px;
 }
 
 /* second section - features */
@@ -63,14 +63,14 @@
 }
 
 .features h2 {
-    border-bottom: 4px solid #373867;
     align-self: center;
+    border-bottom: 4px solid #373867; 
 }
 
 .features p {
+    align-self: center;
     padding: 15px 20px;
     line-height: 140%;
-    align-self: center;
     text-align: center;
 }
 
@@ -81,9 +81,9 @@
 }
 
 .feat-list {
+    align-self: center;
     padding: 5px 40px;
     line-height: 140%;
-    align-self: center;
     text-align: center;
 }
 
@@ -106,14 +106,14 @@
     border-bottom: 1px solid #373867;
 }
 .general-container-why h2 {
-    text-align: center;
-    border-bottom: 4px solid #373867;
     width: max-content;
+    border-bottom: 4px solid #373867;
+    text-align: center;
 }
 
 .general-container-why h3 {
-    text-align: center;
     font-size: 16px;
+    text-align: center; 
 }
 
 .odd-box {
@@ -127,9 +127,9 @@
 
 .odd-box p {
     padding: 10px 35px 15px 35px;
+    font-size: 14px;
     line-height: 140%;
     text-align: center;
-    font-size: 14px;
 }
 
 #odd-img-1 {
@@ -154,9 +154,9 @@
 
 .even-box p {
     padding: 10px 35px 15px 35px;
+    font-size: 14px;
     line-height: 140%;
     text-align: center;
-    font-size: 14px;
 }
 
 #even-img-1 {
@@ -200,11 +200,12 @@
     padding-top: 15px;
     margin-bottom: 20px;
     border-bottom: 4px solid #373867;
-    text-align: center;
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
     color: #373867;
+
 }
 
 .name {
@@ -238,9 +239,9 @@
     width: 354px;
     height: 23px;
     border: 1px solid #373867;
-    font-size: 12px;
     border-color: #E0E0E0;
     border-radius: 3px;
+    font-size: 12px;
     color: #373867;
   }
   
@@ -264,10 +265,10 @@
     width: 123px;
     height: 35px;
     background-color: #AACE9B;
-    font-size: 12px;
-    font-weight: bold;
     border-radius: 5px;
     border-style: none;
+    font-size: 12px;
+    font-weight: bold;
     color:#373867;
   }
 
@@ -275,10 +276,10 @@
     width: 82px;
     height: 35px;
     background-color: #b1b2b6;
-    font-size: 12px;
-    font-weight: bold;
     border-radius: 5px;
     border-style: none;
+    font-size: 12px;
+    font-weight: bold;
     color:#373867;
   }
 
@@ -311,13 +312,13 @@
     }
     
     .first-container h2 {
-        text-align: center;
         font-size: 30px;
+        text-align: center;
     }
     
     .first-container p {
-        line-height: 140%;
         font-size: 16px;
+        line-height: 140%;  
     }
     
     .div-img-1 {
@@ -343,12 +344,11 @@
     }
     
     .our-history h2 {
-        text-align: center;
         font-size: 30px;
+        text-align: center; 
     }
     
     .our-history p {
-    
         line-height: 140%;
         font-size: 16px;
     }
@@ -368,22 +368,22 @@
     }
     
     .features h2 {
+        margin-bottom: 30px;
         border-bottom: 4px solid #373867;
         align-self: center;
-        margin-bottom: 30px;
     }
     
     .features p {
         padding: 15px;
-        line-height: 140%;
         font-size: 16px;
+        line-height: 140%;
     }
     
     .feature-list {
         display: flex;
         align-items: flex-start;
-        font-size: 18px;
         margin-bottom: 35px;
+        font-size: 18px;
     }
 
 
@@ -400,20 +400,21 @@
     .first-container-why {
         display: flex;
         flex-direction: row-reverse;
-        border-bottom: 1px solid #373867;
         width: 100%;
+        border-bottom: 1px solid #373867;
     }
+
     .general-container-why h2 {
-        text-align: center;
-        border-bottom: 4px solid #373867;
         width: max-content;
         margin-bottom: 20px;
+        border-bottom: 4px solid #373867;
         font-size: 30px;
+        text-align: center;
     }
     
     .general-container-why h3 {
-        text-align: center;
         font-size: 16px;
+        text-align: center;
     }
     
     .odd-box {
@@ -428,15 +429,15 @@
     
     .odd-box p {
         padding: 10px 35px 15px 35px;
+        font-size: 16px;
         line-height: 140%;
         text-align: center;
-        font-size: 16px;
     }
     
     #odd-img-1 {
+        display: flex;
         width: 412px;
         height: 172px;
-        display: flex;
         margin-top: 20px;
     }
     
@@ -459,15 +460,15 @@
     
     .even-box p {
         padding: 10px 35px 15px 35px;
+        font-size: 16px;
         line-height: 140%;
         text-align: center;
-        font-size: 16px;
     }
     
     #even-img-1 {
+        display: flex;
         width: 412px;
         height: 172px;
-        display: flex;
         margin-top: 20px; 
     }
     
@@ -478,9 +479,9 @@
     }
     
     #odd-img-2 {
+        display: flex;
         width: 412px;
         height: 172px;
-        display: flex;
         margin-top: 20px;
     }
     
@@ -492,9 +493,9 @@
     }
     
     #even-img-2 {
+        display: flex;
         width: 412px;
         height: 172px;
-        display: flex;
         margin-top: 20px; 
     }
 
@@ -503,8 +504,8 @@
         height: 26px;
         border-style: none;
         background-color: #aace9b;
-        color: #373867;
         font-size: 9px;
+        color: #373867;
       }
 
     /* section contact us */
@@ -551,9 +552,9 @@
         width: 354px;
         height: 23px;
         border: 1px solid #373867;
-        font-size: 12px;
         border-color: #E0E0E0;
         border-radius: 3px;
+        font-size: 12px;
         color: #373867;
     }
     
@@ -577,10 +578,10 @@
         width: 123px;
         height: 35px;
         background-color: #AACE9B;
-        font-size: 12px;
-        font-weight: bold;
         border-radius: 5px;
         border-style: none;
+        font-size: 12px;
+        font-weight: bold;
         color:#373867;
     }
 
@@ -588,10 +589,10 @@
         width: 82px;
         height: 35px;
         background-color: #b1b2b6;
-        font-size: 12px;
-        font-weight: bold;
         border-radius: 5px;
         border-style: none;
+        font-size: 12px;
+        font-weight: bold;
         color:#373867;
     }  
   }

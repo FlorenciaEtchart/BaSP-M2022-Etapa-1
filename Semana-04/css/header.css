@@ -21,11 +21,9 @@ h1 {
 
 @media (min-width: 900px) {
    header {
-    margin-left: 20%;
-    width: 100vw;
     position: fixed;
+    width: 100vw;
+    margin-left: 20%;
     background-color: #fff;
    }
-  
-  }
 } 

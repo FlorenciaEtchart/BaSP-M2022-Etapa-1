@@ -6,8 +6,8 @@ body{
 }
 
 h1 {
-  font-size: 50px;
   border-bottom: #373867 solid 4px;  
+  font-size: 50px;
 }
 
 
@@ -65,6 +65,6 @@ li a {
   height: 20px;
   border-style: none;
   background-color: #aace9b;
-  color: #373867;
   font-size: 9px;
+  color: #373867;
 }
