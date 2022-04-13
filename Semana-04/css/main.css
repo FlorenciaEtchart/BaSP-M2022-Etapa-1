@@ -3,6 +3,26 @@
 
 /* fisrt section - what is trackgenix and our history*/
 
+#odd-img-2 , #even-img-1 , #odd-img-1 , #even-img-2 {
+    display: flex;
+    padding: 31px 102px 13px 102px; 
+}
+
+#img-1 {
+    align-self: center;
+    width: 328px;
+    height: 134px;
+    margin-left: 30px;
+    border-radius:10px;
+}
+
+#img-2 {
+    width: 328px;
+    height: 134px;
+    margin-left: 30px;
+    border-radius:10px;
+}
+
 .what-is-trackgenix {
     display: flex;
     flex-direction: column;
@@ -21,14 +41,6 @@
     text-align: center;
 }
 
-#img-1 {
-    align-self: center;
-    width: 328px;
-    height: 134px;
-    margin-left: 30px;
-    border-radius:10px;
-}
-
 .our-history {
     display: flex;
     flex-direction: column;
@@ -45,13 +57,6 @@
     padding: 15px 30px;
     line-height: 140%;;
     text-align: center;
-}
-
-#img-2 {
-    width: 328px;
-    height: 134px;
-    margin-left: 30px;
-    border-radius:10px;
 }
 
 /* second section - features */
@@ -132,11 +137,6 @@
     text-align: center;
 }
 
-#odd-img-1 {
-    display: flex;
-    padding: 31px 102px 13px 102px; 
-}
-
 .second-container-why {
     display: flex;
     flex-direction: column-reverse;
@@ -159,32 +159,16 @@
     text-align: center;
 }
 
-#even-img-1 {
-    display: flex;
-    padding: 31px 102px 13px 102px; 
-}
-
 .third-container-why {
     display: flex;
     flex-direction: column-reverse;
     border-bottom: 1px solid #373867;
 }
 
-#odd-img-2 {
-    display: flex;
-    padding: 31px 102px 13px 102px; 
-}
-
-
 .fourth-container-why {
     display: flex;
     flex-direction: column-reverse;
     border-bottom: 1px solid #373867;
-}
-
-#even-img-2 {
-    display: flex;
-    padding: 31px 102px 13px 102px; 
 }
 
 /* section contact us */
@@ -295,6 +279,12 @@
         padding-top: 10%;
     }
 
+    #even-img-2 , #odd-img-2 , #even-img-1 , #odd-img-1{
+        display: flex;
+        width: 412px;
+        height: 172px;
+        margin-top: 20px; 
+    }
 
     .first-container {
         display: flex;
@@ -434,13 +424,6 @@
         text-align: center;
     }
     
-    #odd-img-1 {
-        display: flex;
-        width: 412px;
-        height: 172px;
-        margin-top: 20px;
-    }
-    
     .second-container-why {
         display: flex;
         flex-direction: row;
@@ -465,40 +448,18 @@
         text-align: center;
     }
     
-    #even-img-1 {
-        display: flex;
-        width: 412px;
-        height: 172px;
-        margin-top: 20px; 
-    }
-    
     .third-container-why {
         display: flex;
         flex-direction: row-reverse;
         border-bottom: 1px solid #373867;
     }
-    
-    #odd-img-2 {
-        display: flex;
-        width: 412px;
-        height: 172px;
-        margin-top: 20px;
-    }
-    
-    
+     
     .fourth-container-why {
         display: flex;
         flex-direction: row;    
         border-bottom: 1px solid #373867;
     }
     
-    #even-img-2 {
-        display: flex;
-        width: 412px;
-        height: 172px;
-        margin-top: 20px; 
-    }
-
     .general-container-why input {
         width: 82px;
         height: 26px;
@@ -510,91 +471,9 @@
 
     /* section contact us */
 
-    
-    .container-cont-us {
-        display: flex;
-        flex-direction:row;
-        justify-content:flex-start;
-    }
-
-    .cont-us h3 {
-        display: flex;
-    }
-
-    .name {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0px;
-    }
-
-    .email {
-        display: flex;
-        flex-direction: column; 
-        margin: 10px 0px;
-    }
-
-    .category {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0px 15px 0px; 
-    }
-
-    .contact-form {
-        align-self: center;
-    }
-
-    .contact-labels {
-        margin: 5px;
-        font-weight: bold;
-    }
-
-    .boxes {
-        width: 354px;
-        height: 23px;
-        border: 1px solid #373867;
-        border-color: #E0E0E0;
-        border-radius: 3px;
-        font-size: 12px;
-        color: #373867;
-    }
-    
-    .textarea {
-        width: 354px;
-        height: 78px;
-        border-radius: 3px;
-        border-color: #E0E0E0;
-        color: #373867;
-    }
-    
-    .contact-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 15px;
-        align-items: flex-end;
-
-    }
-    .send-msg {
-        width: 123px;
-        height: 35px;
-        background-color: #AACE9B;
-        border-radius: 5px;
-        border-style: none;
-        font-size: 12px;
-        font-weight: bold;
-        color:#373867;
-    }
-
-    .reset {
-        width: 82px;
-        height: 35px;
-        background-color: #b1b2b6;
-        border-radius: 5px;
-        border-style: none;
-        font-size: 12px;
-        font-weight: bold;
-        color:#373867;
-    }  
+      .cont-us {
+          align-items:flex-start;
+      }
   }
 
 

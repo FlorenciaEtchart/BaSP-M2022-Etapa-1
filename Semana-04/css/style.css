@@ -28,6 +28,20 @@ li a {
   color: #373867;
 }
 
+#why h2 {
+  text-transform: uppercase;
+}
+
+#contact-us h3 {
+  text-transform: uppercase;
+}
+
+#odd-img-1 , #even-img-1 , #odd-img-2 , #even-img-2 {
+  width: 225px;
+  height: 115px;
+  border-radius: 17px;
+}
+
 .article-1 h2 {
   color: #49a73b;
 }
@@ -44,20 +58,6 @@ li a {
 
 .article-2 h2 {
   text-transform: uppercase;
-}
-
-#why h2 {
-  text-transform: uppercase;
-}
-
-#contact-us h3 {
-  text-transform: uppercase;
-}
-
-#odd-img-1 , #even-img-1 , #odd-img-2 , #even-img-2 {
-  width: 225px;
-  height: 115px;
-  border-radius: 17px;
 }
 
 .general-container-why input {

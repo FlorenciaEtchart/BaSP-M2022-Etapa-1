@@ -1,3 +1,11 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-weight: bold;
+    margin-bottom: 2%;   
+}
 
 .brand {
     display: flex;
@@ -6,17 +14,6 @@
     height: 120px;
     margin-right: 15px;
     margin-left: 15px;  
-    
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    font-weight: bold;
-    margin-bottom: 2%; 
-      
 }
 
 @media (min-width: 900px) {
