@@ -34,7 +34,10 @@ https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-04
 
 # Week 05 #
 
-This week we are going to work on Java Script. It will consist of doing a series of exercises applying the concepts learned in the asynchronous material. 
+This week we are going to work on Java Script. It will consist of doing a series of exercises applying the concepts learned in the asynchronous material.
+
+https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
+
 
 
 ## Repository ##
