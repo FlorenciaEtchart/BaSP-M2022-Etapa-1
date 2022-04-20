@@ -28,7 +28,7 @@ CSS was made to give style to the web, corresponding to the HTML structure.
 # Week 04 #
 
 The activity of this week, consisted in create a landing for mobile, laptop and desktop screens, using as a principal  tool Flexbox, starting making the mobile screen first and checking the changes with the inspector and modifying it.
-This can be seen by entering the following link:
+This can be seen by entering the following link:.
 
 https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
 
