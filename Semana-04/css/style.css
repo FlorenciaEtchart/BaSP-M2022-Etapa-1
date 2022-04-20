@@ -36,35 +36,15 @@ li a {
   text-transform: uppercase;
 }
 
-#odd-img-1 , #even-img-1 , #odd-img-2 , #even-img-2 {
-  width: 225px;
-  height: 115px;
-  border-radius: 17px;
-}
-
-.article-1 h2 {
+.what-is-trackgenix > h2 {
   color: #49a73b;
 }
 
-.div-img-1 {
-  width: 513px;
-  height: 312px;
+.our-history > h2 {
+  color: #49a73b;
 }
 
-.div-img-2 {
-  width: 328px;
-  height: 170px;
-}
-
-.article-2 h2 {
+.features > h2 {
   text-transform: uppercase;
 }
 
-.general-container-why input {
-  width: 60px;
-  height: 20px;
-  border-style: none;
-  background-color: #aace9b;
-  font-size: 9px;
-  color: #373867;
-}

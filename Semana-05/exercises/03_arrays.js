@@ -1,10 +1,12 @@
 console.log('--EXERCISE 3: ARRAYS');
 
-// a. Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).
+/* a. Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+ "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log). */
 
 console.log ('Exercise 3. a:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'];
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'];
 
 console.log (months[5], months[11]);
 
@@ -12,7 +14,8 @@ console.log (months[5], months[11]);
 
 console.log ('Exercise 3. b:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'];
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'];
 
 var alfa = months.sort ();
 
@@ -22,7 +25,8 @@ console.log (alfa);
 
 console.log ('Exercise 3. c:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'];
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'];
 
 months.push ('winter');
 
@@ -34,7 +38,8 @@ console.log (months);
 
 console.log ('Exercise 3. d:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'];
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'];
 
 months.shift ();
 
@@ -46,23 +51,26 @@ console.log (months);
 
 console.log ('Exercise 3. e:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'];
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'];
 
 months.reverse ();
 
 console.log (months);
 
-// f. Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+// f. Unir todos los elementos del array en un único string donde cada mes este separado por un guión -(utilizar join).
 
 console.log ('Exercise 3. f:');
 
-var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october', 'november', 'december'].join ('-');
+var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augost', 'september', 'october',
+'november', 'december'].join ('-');
 
 console.log (months);
 
 // g. Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 
-var months = ['january','february','march','april','may','june','july','augost','september','october','november','december'].slice (4, 11);
+var months = ['january','february','march','april','may','june','july','augost','september','october',
+'november','december'].slice (4, 11);
 
 console.log (months);
 

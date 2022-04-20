@@ -1,186 +1,160 @@
 
 /* --------------------- MOBILE VERSION ----------------------*/
-
-/* fisrt section - what is trackgenix and our history*/
+main {
+    width: 100vw;
+    padding-top: 20px;
+}
 
 #odd-img-2 , #even-img-1 , #odd-img-1 , #even-img-2 {
-    display: flex;
+    width: 225px;
+    height: 115px;
+    border-radius: 17px;
     padding: 31px 102px 13px 102px; 
 }
 
 #img-1 {
-    align-self: center;
     width: 328px;
     height: 134px;
-    margin-left: 30px;
     border-radius:10px;
 }
 
 #img-2 {
     width: 328px;
     height: 134px;
-    margin-left: 30px;
     border-radius:10px;
 }
 
-.what-is-trackgenix {
+
+.what-is-trackgenix, .our-history {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 85%;
-    margin: 30px;
+} 
+
+.what-is-trackgenix h2, .our-history h2 {
+    align-self: center;
+    margin-top: 10px;
 }
 
-.what-is-trackgenix h2 {
-    text-align: center;
-}
-
-.what-is-trackgenix p {
-    padding: 15px 30px;
-    line-height: 140%;;
-    text-align: center;
-}
-
-.our-history {
+.what-is-trackgenix .desktop-1, .our-history .desktop-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 85%;
-    margin: 30px;
 }
 
-.our-history h2 {
+.desktop-1 img , .desktop-1 p , .desktop-2 img , .desktop-2 p {
+    align-self: center;
+}
+
+.desktop-1 p , .desktop-2 p {
     text-align: center;
+    width: 80%;
+    height: 100px;
 }
-
-.our-history p {
-    padding: 15px 30px;
-    line-height: 140%;;
-    text-align: center;
-}
-
-/* second section - features */
 
 .features {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
 }
 
 .features h2 {
+    margin-bottom: 10px;
     align-self: center;
     border-bottom: 4px solid #373867; 
+    font-size: 30px;
 }
 
 .features p {
+    width: 80%;
+    margin-top: 10px;
     align-self: center;
-    padding: 15px 20px;
-    line-height: 140%;
+    line-height: 20px;
     text-align: center;
 }
 
 .feature-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .feat-list {
+    width: 90%;
+    margin-top: 10px;
     align-self: center;
-    padding: 5px 40px;
-    line-height: 140%;
+    line-height: 20px;
     text-align: center;
+    font-size: 14px;
+    list-style-type: circle;
 }
 
-/* third section - why trackgenix */
-
-/* hole section why trackgenix */
+.item-list {
+    margin-left: 40px;
+}
 
 .general-container-why {
     display: flex;
     flex-direction:column;
     align-items: center;
-    width: 85%;
-    margin: 30px;
+    width: 80%;
+    margin-top: 20px;
 }
-/* particular section */
 
-.first-container-why {
-    display: flex;
-    flex-direction: column-reverse;
-    border-bottom: 1px solid #373867;
-}
 .general-container-why h2 {
     width: max-content;
+    align-self: center;
     border-bottom: 4px solid #373867;
-    text-align: center;
 }
 
-.general-container-why h3 {
-    font-size: 16px;
-    text-align: center; 
+.first-container-why , .third-container-why , .second-container-why , .fourth-container-why{
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 1px solid #373867;
 }
 
-.odd-box {
+.odd-box , .even-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px 5px;
-    text-align: center;
-    line-height: 140%;
+    width: 80%;
+    align-self: center;
+    line-height: 20px;
 }
 
-.odd-box p {
-    padding: 10px 35px 15px 35px;
+.odd-box h3 , .even-box h3 {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 16px; 
+}
+
+.odd-box p , .even-box p {
+    align-self: center; 
     font-size: 14px;
-    line-height: 140%;
+    line-height: 20px;
     text-align: center;
 }
 
-.second-container-why {
-    display: flex;
-    flex-direction: column-reverse;
-    border-bottom: 1px solid #373867;
+.odd-box-img , .even-box-img {
+    align-self: center;
 }
 
-.even-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 5px;
-    text-align: center;
-    line-height: 140%;
-}
-
-.even-box p {
-    padding: 10px 35px 15px 35px;
-    font-size: 14px;
-    line-height: 140%;
-    text-align: center;
-}
-
-.third-container-why {
-    display: flex;
-    flex-direction: column-reverse;
-    border-bottom: 1px solid #373867;
-}
-
-.fourth-container-why {
-    display: flex;
-    flex-direction: column-reverse;
-    border-bottom: 1px solid #373867;
-}
-
-/* section contact us */
+.general-container-why input {
+    align-self: center;
+    width: 60px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: none;
+    background-color: #aace9b;
+    font-size: 9px;
+    color: #373867;
+  }
 
 .cont-us {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .cont-us h3 {
+    align-self: center;
     padding-top: 15px;
     margin-bottom: 20px;
     border-bottom: 4px solid #373867;
@@ -189,65 +163,57 @@
     text-align: center;
     text-transform: uppercase;
     color: #373867;
+}
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .name {
     display: flex;
     flex-direction: column;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .email {
     display: flex;
-    flex-direction: column; 
-    margin: 10px 0px;
+    flex-direction: column;
+    margin: 5px 0px;
 }
 
 .category {
     display: flex;
     flex-direction: column;
-    margin: 10px 0px 15px 0px; 
-}
-
-.contact-form {
-    align-self: center;
+    margin: 5px 0px 15px 0px; 
 }
 
 .contact-labels {
-    margin: 5px;
+    width: 200px;
+    height: 35px;
     font-weight: bold;
 }
 
-  .boxes {
-    width: 354px;
-    height: 23px;
-    border: 1px solid #373867;
-    border-color: #E0E0E0;
-    border-radius: 3px;
-    font-size: 12px;
-    color: #373867;
-  }
-  
-  .textarea {
-    width: 354px;
+.textarea {
+    width: 250px;
     height: 78px;
     border-radius: 3px;
     border-color: #E0E0E0;
     color: #373867;
   }
-  
+
   .contact-buttons {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin-top: 15px;
-      align-items: flex-end;
-
+      margin-top: 20px;
+      margin-bottom: 40px;
   }
+
   .send-msg {
     width: 123px;
     height: 35px;
+    margin-right: 40px;
     background-color: #AACE9B;
     border-radius: 5px;
     border-style: none;
@@ -259,6 +225,7 @@
   .reset {
     width: 82px;
     height: 35px;
+    padding-left: 10px;
     background-color: #b1b2b6;
     border-radius: 5px;
     border-style: none;
@@ -272,240 +239,101 @@
 
 @media (min-width: 1024px) {
 
-/* what is trackgenix section */
-
     main {
-        margin-left: 25%;
-        padding-top: 10%;
+        width: 80%;
+        padding-top: 70px;
+        margin-left: 20%;
     }
 
     #even-img-2 , #odd-img-2 , #even-img-1 , #odd-img-1{
-        display: flex;
         width: 412px;
         height: 172px;
-        margin-top: 20px; 
+        margin-bottom: 20px;
     }
 
-    .first-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 30px;
+    #img-1 {
+        width: 413px;
+        height: 212px;
+        border-radius:10px;
+    }
+    
+    #img-2 {
+        width: 350px;
+        height: 180px;
+        margin-left: 60px;
+        border-radius:10px;
     }
 
-    .desktop-1 {
-        display: flex;
+    .what-is-trackgenix .desktop-1 {
+        display:flex;
         flex-direction: row;
-        align-items: center;
-        margin-top: 25px;
+        align-items:center;
+        padding-top: 15px;      
     }
     
-    .first-container h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .first-container p {
-        font-size: 16px;
-        line-height: 140%;  
-    }
-    
-    .div-img-1 {
-        width: 50%;
-        height: 25%;
-        border-radius:10px;
+    .what-is-trackgenix > h2 { 
+        margin-bottom: 15px;
+        margin-top: 30px;
+        margin-left: 200px;
     }
 
-    .our-history {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 30px;
+    .what-is-trackgenix p {
+        margin-left: 50px;
+        margin-right: 20px;
     }
 
-    .desktop-2 {
+    .our-history .desktop-2{
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        width: 100%;
-        margin: 30px;  
+        align-items:center;
     }
-    
+
     .our-history h2 {
-        font-size: 30px;
-        text-align: center; 
+        margin-bottom: 15px;
+        margin-left: 100px;
     }
-    
+
     .our-history p {
-        line-height: 140%;
-        font-size: 16px;
+        margin-left: 20px;
     }
-    
-    .div-img-2 {
-        width: 50%;
-        height: 20%;
-        border-radius:10px;
+   
+    .feat-list {
+        margin-left: 150px;
     }
 
-/* features section */
-
-    .features {
-        display: flex;
-        flex-direction: column;
-        margin-top: 35px;
-    }
-    
-    .features h2 {
-        margin-bottom: 30px;
-        border-bottom: 4px solid #373867;
-        align-self: center;
-    }
-    
-    .features p {
-        padding: 15px;
-        font-size: 16px;
-        line-height: 140%;
-    }
-    
-    .feature-list {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 35px;
-        font-size: 18px;
-    }
-
-
-/* why trackgenix section */
-
-    .general-container-why {
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        width: 100%;
-        margin: 20px;
-    }
-    
-    .first-container-why {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        border-bottom: 1px solid #373867;
+    .item-list {
+        padding-right: 250px;
     }
 
     .general-container-why h2 {
-        width: max-content;
+        margin-top: 10px;
         margin-bottom: 20px;
-        border-bottom: 4px solid #373867;
-        font-size: 30px;
-        text-align: center;
     }
-    
-    .general-container-why h3 {
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    .odd-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin:30px 0px;
-        padding: 35px 10px;
-        text-align: center;
-        line-height: 140%;
-    }
-    
-    .odd-box p {
-        padding: 10px 35px 15px 35px;
-        font-size: 16px;
-        line-height: 140%;
-        text-align: center;
-    }
-    
-    .second-container-why {
+
+    .first-container-why , .third-container-why{
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
-        border-bottom: 1px solid #373867;
     }
-    
-    .even-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin:30px 0px;
-        padding: 35px 10px;
-        text-align: center;
-        line-height: 140%;
-    }
-    
-    .even-box p {
-        padding: 10px 35px 15px 35px;
-        font-size: 16px;
-        line-height: 140%;
-        text-align: center;
-    }
-    
-    .third-container-why {
+
+    .second-container-why , .fourth-container-why {
         display: flex;
         flex-direction: row-reverse;
-        border-bottom: 1px solid #373867;
-    }
-     
-    .fourth-container-why {
-        display: flex;
-        flex-direction: row;    
-        border-bottom: 1px solid #373867;
-    }
-    
-    .general-container-why input {
-        width: 82px;
-        height: 26px;
-        border-style: none;
-        background-color: #aace9b;
-        font-size: 9px;
-        color: #373867;
-      }
-
-    /* section contact us */
-
-      .cont-us {
-          align-items:flex-start;
-      }
-  }
-
-
- /* -------------------------- LAPTOP VERSION -------------------------- */
-
-
- @media (min-width: 768px) {
-    .div-img-1 {
-        display: flex;
-        flex-direction: column;
     }
 
-    .div-img-2 {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
+    .odd-box {
+        width: 200px;
+        height: 220px;
+        margin-left: 300px;
     }
 
-    .odd-box-img {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
+    .even-box {
+        width: 200px;
+        height: 220px;   
     }
 
-    .even-box-img {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;  
+    .odd-box input , .even-box input {
+        width: 70px;
+        height: 50px;
+        border-radius: 3px;
+        font-weight: bold;
     }
-}
-
-
-
-
-

@@ -4,8 +4,7 @@ aside {
 
 aside {
   position: fixed;
-  flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 20%;
   background-color: #b1b2b6;
 }
@@ -104,15 +103,11 @@ aside p {
   }
 
 
-/* media queries 900px */
+/* media queries 1024px */
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     aside {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 20%;
-
   }
 }
     
