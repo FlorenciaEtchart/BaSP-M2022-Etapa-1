@@ -28,7 +28,7 @@ CSS was made to give style to the web, corresponding to the HTML structure.
 # Week 04 #
 
 The activity of this week, consisted in create a landing for mobile, laptop and desktop screens, using as a principal  tool Flexbox, starting making the mobile screen first and checking the changes with the inspector and modifying it.
-This can be seen by entering the following link:.
+This can be seen by entering the following link:.   
 
 https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
 
@@ -38,6 +38,12 @@ This week we are going to work on Java Script. It will consist of doing a series
 
 https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 
+# Week 06 #
+
+Must be continued on what was developed in problem 04. The screens must be created following the Screenflow made in Week 01 on Figma.
+Will work with html, css, javascript to develop the "login" and "employee registration" screens with the requirements made by the tutors to make it work and solve the weekly problem.
+
+https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
 
 ## Repository ##
