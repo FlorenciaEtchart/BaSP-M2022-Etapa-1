@@ -1,15 +1,12 @@
 .header {
     display: fixed;
-    width: 1050px;
+    width: 80%;
     height: 90px;
-    margin-left: 290px;
     background-color: #ffffff;
   }
   
   .h1 {
     margin-top: 35px;
-    margin-left: 50px;
-    left: 290px;
     background-color: #ffffff;
     font-weight: bold;
     color: #373867; 
@@ -17,17 +14,16 @@
 
 .brand {
     width: 80%;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-top: 20px;
-    text-align: center;
 }
 
 /* ------------------------------ DESKTOP VERSION -------------------------*/
 
 @media (min-width: 1024px) {
     header {
-        position: fixed;      /*el titulo deberia quedar a la izquierda */
-        width: 100vw;
+        position: fixed;
+        width: 80vw;
         margin-left: 210px;
         background-color: #ffffff;
        }

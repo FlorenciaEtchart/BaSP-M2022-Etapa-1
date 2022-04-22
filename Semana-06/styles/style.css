@@ -6,7 +6,8 @@ body{
 }
 
 h1 {
-  border-bottom: #373867 solid 4px;  
+  border-bottom: #373867 solid 4px;
+  font-weight: bold;
   font-size: 50px;
 }
 
