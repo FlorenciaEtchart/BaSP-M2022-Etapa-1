@@ -1,0 +1,137 @@
+  main {
+      width: 100vw;
+      height: 80%;
+      padding-top: 10%;
+  }
+
+  #employee-login .sign-up {
+      width: 70px;
+      height: 25px;
+      margin: 10px;
+      background-color: #aace9b;
+      border-radius: 3px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      color: #373867;
+    }
+    
+    #employee-login .go-back {
+      width: 70px;
+      height: 25px;
+      margin: 10px;
+      background-color: #373867;
+      border-radius: 3px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      color: #dadada;
+    }
+
+    #employee-login {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8%;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    #employee-login h2 {
+      width: 50%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      background-color: #aace9b;
+      border-radius: 3px;
+    }
+
+    #employee-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      background-color: #dadada;
+      opacity: 80%;
+    }
+
+  .form-sign-up {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40%;
+  }
+
+  .access-buttons {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 150px;
+    margin-top: 15px;
+  }
+
+  #name-form , #last-name , #dni-form , #date-of-birth-form , #telephone-form ,
+  #address-form , #city-form , #postal-code-form , #email-form , #email-form , #password-form , #repeat-password-form   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form-sign-up label {
+    font-weight: bold;
+  }
+
+  .form-sign-up input {
+    width: 180px;
+    height: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+@media (min-width: 480px) {
+  main {
+    height: 130%;
+  }
+
+  #employee-login {
+    padding-left: 10px;
+  }
+
+  #employee-login h2 {
+    width: 43%;
+  }
+
+  #employee-form {
+    width: 50%;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
+  #employee-form input {
+    font-size: 10px;
+  } 
+
+  .access-buttons {
+    margin-top: 15px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #employee-login h2 {
+    width: 48%;
+  }
+
+  #employee-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  #employee-form input {
+    font-size: 12px;
+  }
+
+  .access-buttons {
+    margin-top: 15px;
+    padding-left: 100px;
+  }
+}
