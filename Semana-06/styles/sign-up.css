@@ -81,9 +81,10 @@
 
   .form-sign-up input {
     width: 180px;
-    height: 18px;
+    height: 20px;
     margin-bottom: 10px;
     margin-top: 5px;
+    border-style: none;
   }
 
 @media (min-width: 480px) {
@@ -107,6 +108,7 @@
 
   #employee-form input {
     font-size: 10px;
+    border-style: none;
   } 
 
   .access-buttons {
@@ -128,6 +130,7 @@
 
   #employee-form input {
     font-size: 12px;
+    border-style: none;
   }
 
   .access-buttons {

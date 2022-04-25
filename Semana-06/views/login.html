@@ -76,18 +76,27 @@
                   <h1>Sign In</h1>
                 </div>
                 <div class="login-form">
-                  <h2>Username:</h2>
-                  <input type="text" placeholder="Username"/>
+                  <h2>Email:</h2>
+                  <input id="email-box" type="email" placeholder="Email"/>
+                  <div class="mail-alert"></div>
                   <h2>Password:</h2>
-                  <input type="password" placeholder="Password"/>
+                  <input id="password-box" type="password" placeholder="Password"/>
+                  <div class="password-alert"></div>
                   <div class="checkbox">
                       <input class="check-box-input" type="checkbox" value="remember-me">
                       <label class="check-box-label" for="remember-me">Remember me</label>
                   </div>
-                  <input type="button" value="Log In" class="login-button"/>
+                  <input type="button" value="Log In" class="login-button" id="log-in"/>
                   <a href="#">Forgot password?</a>
                 </div> 
-            </div>  
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="popup">
+                <div class="closeIcon"></div>
+                <span id="mail-checked"></span>
+                <span id="password-checked"></span>
+                <button id="goback-button">Back</button>
+            </div>
         </main>
         <footer>
             <div class="nav-links">
@@ -132,5 +141,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../javascript/login.js"></script>
     </body>
 </html>
