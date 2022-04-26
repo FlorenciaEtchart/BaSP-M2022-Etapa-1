@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/login.css">
+        <script src="../javascript/login.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,10 +79,10 @@
                 <div class="login-form">
                   <h2>Email:</h2>
                   <input id="email-box" type="email" placeholder="Email"/>
-                  <div class="mail-alert"></div>
+                  <div class="alert-msg"></div>
                   <h2>Password:</h2>
                   <input id="password-box" type="password" placeholder="Password"/>
-                  <div class="password-alert"></div>
+                  <div class="alert-msg"></div>
                   <div class="checkbox">
                       <input class="check-box-input" type="checkbox" value="remember-me">
                       <label class="check-box-label" for="remember-me">Remember me</label>
@@ -89,13 +90,6 @@
                   <input type="button" value="Log In" class="login-button" id="log-in"/>
                   <a href="#">Forgot password?</a>
                 </div> 
-            </div>
-            <div class="overlay" id="overlay">
-                <div class="popup">
-                <div class="closeIcon"></div>
-                <span id="mail-checked"></span>
-                <span id="password-checked"></span>
-                <button id="goback-button">Back</button>
             </div>
         </main>
         <footer>
@@ -141,6 +135,5 @@
                 </div>
             </div>
         </footer>
-        <script src="../javascript/login.js"></script>
     </body>
 </html>
