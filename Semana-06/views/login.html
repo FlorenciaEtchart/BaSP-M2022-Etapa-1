@@ -33,8 +33,16 @@
                     <div class="divform">
                         <input type="text" class="search" placeholder="Search...">
                         <div class="nav-buttons">
-                            <input class="log-in" type="button" value="log in">
-                            <input class="sign-up" type="button" value="sign up">
+                            <button class="log-in">
+                                <a href="login.html">
+                                    Log In
+                                </a>
+                            </button>
+                            <button class="sign-up">
+                                <a href="sign-up.html">
+                                    Sign Up
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -81,13 +89,17 @@
                   <input id="email-box" type="email" placeholder="Email"/>
                   <div class="alert-msg"></div>
                   <h2>Password:</h2>
-                  <input id="password-box" type="password" placeholder="Password"/>
+                  <input id="password-box" type="password" placeholder="********"/>
                   <div class="alert-msg"></div>
                   <div class="checkbox">
                       <input class="check-box-input" type="checkbox" value="remember-me">
                       <label class="check-box-label" for="remember-me">Remember me</label>
                   </div>
+                  <div class="content-sign-in-form">
                   <input type="button" value="Log In" class="login-button" id="log-in"/>
+                  <div id="submit-box"></div>
+                  <div id="submit-box1"></div>
+                  </div>
                   <a href="#">Forgot password?</a>
                 </div> 
             </div>

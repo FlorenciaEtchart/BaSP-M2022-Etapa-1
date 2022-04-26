@@ -32,8 +32,16 @@
                     <div class="divform">
                         <input type="text" class="search" placeholder="Search...">
                         <div class="nav-buttons">
-                            <input class="log-in" type="button" value="log in">
-                            <input class="sign-up" type="button" value="sign up">
+                            <button class="log-in">
+                                <a href="login.html">
+                                    Log In
+                                </a>
+                            </button>
+                            <button class="sign-up">
+                                <a href="sign-up.html">
+                                    Sign Up
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -71,59 +79,80 @@
             </div>
         </aside>
         <main>
-            <form id="employee-login">
-                <h2>Sign Up</h2>
-                <div id="employee-form">
-                    <div class="form-sign-up" id="name-form">
-                        <label for="Name">Name</label>
-                        <input type="text" id="Name" placeholder="Name">
-                    </div>            
-                    <div class="form-sign-up" id="last-name-form">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Last Name">
-                    </div>    
-                    <div class="form-sign-up" id="dni-form">
-                        <label for="dni">ID</label>
-                        <input type="text" id="dni" placeholder="ID">
-                    </div>    
-                    <div class="form-sign-up" id="date-of-birth-form">
-                        <label for="date-of-birth">Date of Birth</label>
-                        <input type="text" id="date-of-birth" placeholder="dd/mm/aaaa">
-                    </div>    
-                    <div class="form-sign-up" id="telephone-form">
-                        <label for="telephone">Phone number</label>
-                        <input type="text" id="telephone" placeholder="0-123-456-789">
-                    </div>    
-                    <div class="form-sign-up" id="address-form">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" placeholder="Address">
-                    </div>    
-                    <div class="form-sign-up" id="city-form">
-                        <label for="city">City</label>
-                        <input type="text" id="city" placeholder="Your city">
-                    </div>    
-                    <div class="form-sign-up" id="postal-code-form">
-                        <label for="postal-code">Postal Code</label>
-                        <input type="text" id="postal-code" placeholder="P.C">
-                    </div>    
-                    <div class="form-sign-up" id="email-form">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Email">
-                    </div>    
-                    <div class="form-sign-up" id="password-form">
-                        <label for="password">Password</label>
-                        <input type="text" id="password" placeholder="Password">
-                    </div>    
-                    <div class="form-sign-up" id="repeat-password-form">
-                        <label for="repeat-password">Repeat password</label>
-                        <input type="text" id="repeat-password" placeholder="Repeat password">
+            <form id="employee-form-box">
+                <div id="employee-login">
+                    <h2>Sign Up</h2>
+                    <div id="employee-form">
+                        <div class="form-sign-up" id="name-form">
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name" placeholder="Insert your name">
+                            <p>Error message</p>
+                        </div>            
+                        <div class="form-sign-up" id="last-name-form">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Insert your last name">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="dni-form">
+                            <label for="dni">ID number</label>
+                            <input type="number" id="dni" placeholder="Insert your ID number">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="date-of-birth-form">
+                            <label for="date-of-birth">Date of Birth</label>
+                            <input type="date" id="date-of-birth" placeholder="dd/mm/aaaa">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="telephone-form">
+                            <label for="telephone">Phone number</label>
+                            <input type="number" id="telephone" placeholder="0-123-456-789">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="address-form">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Insert your address">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="city-form">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Insert your city">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="postal-code-form">
+                            <label for="postal-code">Postal Code</label>
+                            <input type="number" id="postal-code" placeholder="Insert your P.C">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="email-form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Insert your email">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="password-form">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="********">
+                            <p>Error message</p>
+                        </div>    
+                        <div class="form-sign-up" id="repeat-password-form">
+                            <label for="repeat-password">Repeat password</label>
+                            <input type="password" id="repeat-password" placeholder="********">
+                            <p>Error message</p>
+                        </div>
                     </div>
+                    <div class="sumit-btn">
+                        <button id="login-submit" type="submit">
+                            <a href=login.html>
+                                Create
+                            </a>
+                        </button>
+                        <button id="back-submit" type="submit">                        
+                            <a href=index.html>
+                                Return
+                            </a>
+                        </button>
+                    </div>  
                 </div>
-                <div class="access-buttons" id="buttons-form">
-                    <input class="sign-up" type="button" value="Sign Up">
-                    <input class="go-back" type="button" value="Go Back">
-                </div> 
-            </form>  
+            </form>
         </main>
         <footer>
             <div class="nav-links">

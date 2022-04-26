@@ -43,7 +43,7 @@ https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 Must be continued on what was developed in problem 04. The screens must be created following the Screenflow made in Week 01 on Figma.
 Will work with html, css, javascript to develop the "login" and "employee registration" screens with the requirements made by the tutors to make it work and solve the weekly problem.
 
-https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-06/views/landing.html
+https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
 
 ## Repository ##

@@ -1,71 +1,48 @@
   main {
-      width: 100vw;
-      height: 80%;
-      padding-top: 10%;
+    width: 100vw;
+    padding-top: 10%;
   }
 
-  #employee-login .sign-up {
-      width: 70px;
-      height: 25px;
-      margin: 10px;
-      background-color: #aace9b;
-      border-radius: 3px;
-      border: none;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold;
-      color: #373867;
-    }
-    
-    #employee-login .go-back {
-      width: 70px;
-      height: 25px;
-      margin: 10px;
-      background-color: #373867;
-      border-radius: 3px;
-      border: none;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold;
-      color: #dadada;
-    }
-
-    #employee-login {
-      display: flex;
-      flex-direction: column;
-      margin-left: 8%;
-      border-radius: 5px;
-      width: 100%;
-    }
-
-    #employee-login h2 {
-      width: 50%;
-      padding-top: 5px;
-      padding-bottom: 10px;
-      background-color: #aace9b;
-      border-radius: 3px;
-    }
-
-    #employee-form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 50%;
-      background-color: #dadada;
-      opacity: 80%;
-    }
-
-  .form-sign-up {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 40%;
+  #employee-form-box {
+    width: 80%;
   }
 
-  .access-buttons {
+ #employee-login {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 150px;
-    margin-top: 15px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  #employee-login h2 {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  #employee-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dadada;
+    opacity: 80%;
+  }
+
+  #submit-btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #login-submit {
+    background-color:#49a371;
+    color: #fff;
+  }
+
+  #back-submit {
+    background-color: #373867;
+    color: #fff;
   }
 
   #name-form , #last-name , #dni-form , #date-of-birth-form , #telephone-form ,
@@ -73,6 +50,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .form-sign-up {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
   }
 
   .form-sign-up label {
@@ -89,7 +72,7 @@
 
 @media (min-width: 480px) {
   main {
-    height: 130%;
+    width: 100vw;
   }
 
   #employee-login {
@@ -109,11 +92,6 @@
   #employee-form input {
     font-size: 10px;
     border-style: none;
-  } 
-
-  .access-buttons {
-    margin-top: 15px;
-    padding-left: 0px;
   }
 }
 
@@ -131,10 +109,5 @@
   #employee-form input {
     font-size: 12px;
     border-style: none;
-  }
-
-  .access-buttons {
-    margin-top: 15px;
-    padding-left: 100px;
   }
 }

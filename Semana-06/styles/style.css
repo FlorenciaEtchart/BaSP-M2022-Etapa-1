@@ -1,4 +1,4 @@
-body{ 
+body{
   background-color: #fff;
   color: #373867;
   font-family: 'Roboto', sans-serif;
@@ -8,6 +8,7 @@ body{
 h1 {
   border-bottom: #373867 solid 4px;  
   font-size: 40px;
+  background-color: #fff;
 }
 
 
