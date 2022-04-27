@@ -11,6 +11,7 @@
     var inputRepeatPassword = document.getElementById('repeat-password');
     var errorMessage = document.getElementsByClassName('error-msg');
     var regExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    var inputButton = document.getElementById('login-submit');
 
     function validateName () {
         var numbers = '0123456789';
@@ -402,10 +403,35 @@ function validatePassword () {
             errorMessage[9].innerHTML = ' ';
         }
 
+    function validateSubmit() {
+        var name = inputName.value;
+        var surname = inputLastName.value;
+        var id = inputDni.value;
+        var date = inputDateOfBirth.value;
+        var phone = inputPhoneNumber.value;
+        var address = inputAddress.value;
+        var city = inputCity.value;
+        var pc = inputPostalCode.value;
+        var email = inputMail.value;
+        var pass = inputPsw.value;
+        var repeatpass = inputRepeatPassword.value;
 
 
+        if ((name.length != 0) && (surname.length != 0) && (id.length != 0)
+        && (date.length != 0) && (phone.length != 0) && (address.length != 0)
+        && (city.length != 0) && (pc.length != 0) && (email.length != 0) &&
+        (pass.length != 0) && (repeatpass.length != 0)) {
+            alert ('Login successfull');
+            alert('Full name: '+name+' Surname: '+surname+' Id: '+id+' Date of birth: '+date+' Phone number: '+phone+' Address: '+address+' City: '+city+' Postal code: '+pc+' Email: '+
+            email+' Password: '+pass+'');
+        } else {
+            alert('Validation was not success');
+        }
+    }
 
-
+    inputButton.onclick = function() {
+        validateSubmit();
+    }
 
 
 

@@ -68,28 +68,21 @@ window.onload  = function(){
             messageAlert[1].innerHTML = ' ';
         }
 
-    function actionSubmit() {
-
-        if (messageAlert[0].classList.contains('correct')) {
-            contentBoxSubmit.innerHTML = '<span>Email: <span>' +inputEmail.value;
-            contentBoxSubmit.style = "color: #373867";
-        } else if (messageAlert[0].classList.contains('invalid')) {
-            contentBoxSubmit.innerHTML = '<span>Invalid format for password<span>';
-            contentBoxSubmit.style = "color: #ff0000";
+        function validateSubmit() {
+            var email = inputEmail.value;
+            var password = inputPassword.value;
+            
+            if ((email.length != 0) && (password.length != 0)) {
+                alert ('Login successfull');
+                alert('Email: '+email+' Password: '+password+'');
+            } else {
+                alert('Validation was not success');
+            }
         }
-
-        if (messageAlert[1].classList.contains('correct')) {
-            contentBoxSubmit1.innerHTML = '<span>Password: <span>' +inputPassword.value;
-            contentBoxSubmit1.style = "color: #373867";
-        } else if (messageAlert[1].classList.contains('invalid')) {
-            contentBoxSubmit1.innerHTML = '<span>Invalid format for password<span>';
-            contentBoxSubmit1.style = "color: #ff0000";
+    
+        inputSubmit.onclick = function() {
+            validateSubmit();
         }
-    }
-
-    inputSubmit.onclick = function  (e) {
-        actionSubmit();
-        e.preventDefault();
-    }
 }
+    
 
