@@ -30,51 +30,60 @@ window.onload  = function(){
     }
 
     function validatePassword () {
-        var spaces = false;
-        var cont = 0;
-        var p = inputPassword.value;
-
-        while (!spaces && (cont < p.length)) {
-        if (p.charAt(cont) == ' ')
-        spaces = true;
-        cont ++;
+        var alphaNumeric = '0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        var numbers = '0123456789';
+        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        var passwordValue = inputPassword.value;
+        var isAlphaNumeric = true;
+        var onlyNumbers = true;
+        var onlyLetters = true;
+    
+        passwordValue.split('').forEach(function(letter){
+            if (alphaNumeric.indexOf(letter) == -1) isAlphaNumeric = false;
+            if (numbers.indexOf(letter) == -1) onlyNumbers = false;
+            if (letters.indexOf(letter) == -1) onlyLetters = false;
+        })
+    
+        if (isAlphaNumeric && !onlyNumbers && !onlyLetters && passwordValue.length >=8) {
+            messageAlert[1].classList.add('correct');
+            messageAlert[1].innerHTML = ' ';
+        } else if (inputPassword.value.length == 0){
+            messageAlert[1].classList.add('invalid');
+            messageAlert[1].innerHTML = 'Fiels are required';
+            messageAlert[1].style = "color: #ff0000";
+        } else {
+            messageAlert[1].classList.add('invalid');
+            messageAlert[1].innerHTML = 'Must enter a valid password';
+            messageAlert[1].style = "color: #ff0000";
         }
-
-        if (inputPassword.value.length > 8) {
-        if (spaces) {
-                messageAlert[1].classList.add('invalid');
-                messageAlert[1].innerHTML ='Blank spaces are not allowed';
-            } else {
-                messageAlert[1].classList.add('correct');
-                messageAlert[1].innerHTML ='Correct password';
-            } } else {
-                messageAlert[1].classList.add ('invalid');
-                messageAlert[1].innerHTML ='Password must be longer than 8 characters';
-            }
     }
-
-    inputPassword.onblur = function () {
-        validatePassword ();
-    }
-
-    inputPassword.onfocus = function () {
-        messageAlert[1].classList.remove('correct');
-        messageAlert[1].classList.remove('invalid');
-        messageAlert[1].innerHTML = ' ';
-    }
+    
+        inputPassword.onblur = function(){
+            validatePassword();
+        }
+        
+        inputPassword.onfocus = function(){
+            messageAlert[1].classList.remove('invalid');
+            messageAlert[1].classList.remove('correct');
+            messageAlert[1].innerHTML = ' ';
+        }
 
     function actionSubmit() {
 
         if (messageAlert[0].classList.contains('correct')) {
             contentBoxSubmit.innerHTML = '<span>Email: <span>' +inputEmail.value;
+            contentBoxSubmit.style = "color: #373867";
         } else if (messageAlert[0].classList.contains('invalid')) {
             contentBoxSubmit.innerHTML = '<span>Invalid format for password<span>';
+            contentBoxSubmit.style = "color: #ff0000";
         }
 
         if (messageAlert[1].classList.contains('correct')) {
             contentBoxSubmit1.innerHTML = '<span>Password: <span>' +inputPassword.value;
+            contentBoxSubmit1.style = "color: #373867";
         } else if (messageAlert[1].classList.contains('invalid')) {
             contentBoxSubmit1.innerHTML = '<span>Invalid format for password<span>';
+            contentBoxSubmit1.style = "color: #ff0000";
         }
     }
 

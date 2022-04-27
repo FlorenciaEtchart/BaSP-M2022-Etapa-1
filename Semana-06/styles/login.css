@@ -86,3 +86,9 @@ main {
     color: #ff0000; 
 }
 
+#submit-box , #submit-box1 {
+    margin-top: 5px;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
