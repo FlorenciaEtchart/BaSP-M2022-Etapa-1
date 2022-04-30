@@ -1,0 +1,51 @@
+body{
+  background-color: #fff;
+  color: #373867;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  border-bottom: #373867 solid 4px;  
+  font-size: 40px;
+  background-color: #fff;
+}
+
+
+h2 {
+  padding: 0px 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  border-bottom: #373867;
+  font-weight: bold;
+
+}
+
+li a {
+  text-decoration: none;
+  color: #373867;
+}
+
+#why h2 {
+  text-transform: uppercase;
+}
+
+#contact-us h3 {
+  text-transform: uppercase;
+}
+
+.what-is-trackgenix > h2 {
+  color: #49a73b;
+}
+
+.our-history > h2 {
+  color: #49a73b;
+}
+
+.features > h2 {
+  text-transform: uppercase;
+}
+

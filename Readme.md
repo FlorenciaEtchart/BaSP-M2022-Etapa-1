@@ -45,6 +45,13 @@ Will work with html, css, javascript to develop the "login" and "employee regist
 
 https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
+# Week 07 #
+
+The forms from week 06 must be extended so that pressing the confirmation buttons sends the data, such as query-params, loaded in them to a web server through an HTTP request from JavaScript, using the Fetch method.
+
+
+https://florenciaetchart.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
+
 
 ## Repository ##
 

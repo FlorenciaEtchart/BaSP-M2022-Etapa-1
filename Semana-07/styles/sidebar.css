@@ -1,0 +1,100 @@
+aside {
+  display: none;
+}
+
+aside {
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  background-color: #b1b2b6;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.search {
+  width: 170px;
+  height: 20px;
+  margin-top: 25px;
+  border-radius: 3px;
+  border: none;
+}
+
+button {
+  display: inline;
+  justify-content: space-between;
+  width: 65px;
+  height: 20px;
+  margin: 10px 0px 0px 10px;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+}
+
+button a {
+  text-decoration:  none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
+.log-in {
+  
+  background-color: #49a371;
+}
+
+.sign-up {
+  background-color: #373867;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 170px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+aside p {
+  font-size: 14px;
+  }
+  
+  aside li {
+    font-size: 14px;
+  }
+
+  .menu > p {
+    border-bottom: 1.5px solid #49a371;
+    max-width: 232px;
+    text-transform: uppercase; 
+     
+  }
+
+  .get-in-touch > p {
+    border-bottom: 1.5px solid #49a371;
+    max-width: 232px;
+    text-transform: uppercase;
+  }
+
+
+/* media queries 1024px */
+
+@media (min-width: 1024px) {
+    aside {
+    display: flex;
+  }
+}
+    

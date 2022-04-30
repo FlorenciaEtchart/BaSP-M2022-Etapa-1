@@ -1,0 +1,122 @@
+  main {
+    display: flex;
+    width: 100vw;
+    padding-top: 10%;
+
+  }
+
+  #employee-form-box {
+    width: 80%;
+  }
+
+ #employee-login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  #employee-login h2 {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  #employee-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dadada;
+    opacity: 80%;
+  }
+
+  #submit-btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #login-submit {
+    background-color:#49a371;
+    color: #fff;
+  }
+
+  #back-submit {
+    background-color: #373867;
+    color: #fff;
+  }
+
+  #name-form , #last-name , #dni-form , #date-of-birth-form , #telephone-form ,
+  #address-form , #city-form , #postal-code-form , #email-form , #email-form , #password-form , #repeat-password-form   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form-sign-up {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
+  }
+
+  .form-sign-up label {
+    font-weight: bold;
+  }
+
+  .form-sign-up input {
+    width: 180px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-style: none;
+  }
+
+  .error-msg {
+    font-size: 11px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin-top: -5px;
+  }
+
+@media (min-width: 480px) {
+  main {
+    width: 100vw;
+  }
+
+  #employee-login {
+    padding-left: 10px;
+  }
+
+  #employee-login h2 {
+    width: 43%;
+  }
+
+  #employee-form {
+    width: 50%;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
+  #employee-form input {
+    font-size: 10px;
+    border-style: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #employee-login h2 {
+    width: 48%;
+  }
+
+  #employee-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  #employee-form input {
+    font-size: 12px;
+    border-style: none;
+  }
+}
