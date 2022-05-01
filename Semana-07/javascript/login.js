@@ -30,48 +30,6 @@ window.onload  = function(){
         messageAlert[0].innerHTML = '';
     }
 
-    
-
-    function myRequest () {
-
-        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
-        var emailValue = inputEmail;
-        var passwordValue = inputPassword;
-
-        fetch (url + '?email=' + emailValue + '&password=' + passwordValue)
-        .then (function(response){
-            return response.json();
-        })
-        .then (function(jsonResponse){
-            alert (jsonResponse.msg);
-            if (jsonResponse.success){
-                validateForm[0].classList.add ('alert');
-                messageAlert[0].innerHTML = inputEmail.value;
-                messageAlert[1].innerHTML = inputPassword.value;
-            } else {
-                inputEmail.classList.add('blur');
-                inputEmail.classList.remove('correct');
-                messageAlert[0].add('error');
-                inputPassword.classList.add('blur');
-                inputPassword.classList.remove('correct');
-                messageAlert[1].classList.add('error');
-            }
-        })
-        .catch(function(error){
-            console.log('error', error);
-        })
-    }
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if (validateEmail(inputEmail) && validatePassword(inputPassword)) {
-            myRequest(emailValue, passwordValue, url);
-        }
-    })
-
-    
-    
-
     function validatePassword () {
         var alphaNumeric = '0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
         var numbers = '0123456789';
@@ -126,6 +84,35 @@ window.onload  = function(){
         inputSubmit.onclick = function() {
             validateSubmit();
         }
+
+        
+    function myRequest (emailValue, passwordValue) {
+
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+        fetch (url + '?email=' + emailValue + '&password=' + passwordValue)
+        .then (function(response){
+            return response.json();
+        })
+        .then (function(jsonResponse){
+            alert (jsonResponse.msg);
+            if (jsonResponse.success){
+                messageAlert[0].innerHTML = inputEmail.value;
+                messageAlert[1].innerHTML = inputPassword.value;
+            } else {
+                inputEmail.classList.remove('correct');
+                messageAlert[0].add('invalid');
+                inputPassword.classList.remove('correct');
+                messageAlert[1].classList.add('invalid');
+            }
+        })
+        .catch(function(error){
+            console.log('error', error);
+        })
+    }
+
+    inputSubmit.onclick= function() {
+        myRequest(inputEmail.value, inputPassword.value);
+    }
 }
 
     

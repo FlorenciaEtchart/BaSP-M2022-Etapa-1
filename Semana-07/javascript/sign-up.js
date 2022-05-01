@@ -433,7 +433,60 @@ function validatePassword () {
         validateSubmit();
     }
 
+    function myRequest (nameValue, surnameValue, idValue, birthdayValidate, PhoneValue, addressValue, cityValue, PostalCodeValue, email, passwordValue, repeatValue) {
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+        fetch (url + '?name=' + nameValue + '&surnameValue=' + surnameValue + '&idValue' + idValue + '&birthdayValidate' + birthdayValidate +'&PhoneValue' + PhoneValue + '&addressValue' + addressValue + '&cityValue' + cityValue + '&PostalCodeValue' + PostalCodeValue +'&email' + email + '&passwordValue' + passwordValue + '&repeatValue' + repeatValue)
+        .then (function(response){
+            return response.json();
+             })
+        .then (function(jsonResponse){
+            alert (jsonResponse.msg);
+            if (jsonResponse.success){
+                errorMessage[0].innerHTML = inputName.value;
+                errorMessage[1].innerHTML = inputLastName.value;
+                errorMessage[2].innerHTML = inputDni;
+                errorMessage[3].innerHTML = inputDateOfBirth;
+                errorMessage[4].innerHTML = inputPhoneNumber;
+                errorMessage[5].innerHTML = inputAddress;
+                errorMessage[6].innerHTML = inputCity;
+                errorMessage[7].innerHTML = inputPostalCode;
+                errorMessage[8].innerHTML = inputMail;
+                errorMessage[9].innerHTML = inputPsw;
+                errorMessage[10].innerHTML = inputRepeatPassword;
+            } else {
+                inputName.classList.remove('correct');
+                errorMessage[0].add('invalid');
+                inputLastName.classList.remove('correct');
+                errorMessage[1].classList.add('invalid');
+                inputDni.classList.remove('correct');
+                errorMessage[2].classList.add('invalid');
+                inputDateOfBirth.classList.remove('correct');
+                errorMessage[3].classList.add('invalid');
+                inputPhoneNumber.classList.remove('correct');
+                errorMessage[4].classList.add('invalid');
+                inputAddress.classList.remove('correct');
+                errorMessage[5].classList.add('invalid');
+                inputCity.classList.remove('correct');
+                errorMessage[6].classList.add('invalid');
+                inputPostalCode.classList.remove('correct');
+                errorMessage[7].classList.add('invalid');
+                inputMail.classList.remove('correct');
+                errorMessage[8].classList.add('invalid');
+                inputPsw.classList.remove('correct');
+                errorMessage[9].classList.add('invalid');
+                inputRepeatPassword.classList.remove('correct');
+                errorMessage[10].classList.add('invalid');
+            }
+             })
 
+            .catch(function(error){
+                console.log('error', error);
+            })
+         }
+    
+        // inputButton.onclick= function() {
+        //     myRequest (inputName.value, inputLastName.value, inputDni, inputDateOfBirth.value, inputPhoneNumber.value, inputAddress.value, inputCity, inputPostalCode, inputMail, inputPsw, inputRepeatPassword);
+        //  }
 
 
 
