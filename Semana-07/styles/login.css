@@ -6,10 +6,9 @@ main {
     background-color: #F9F9F9;
 }
 
-.login h1 {
-    margin-bottom: 20px;
+.login span {
     font-weight: 450;
-    font-size: 36px;
+    font-size: 35px;
     border-bottom: none;
 }
 
@@ -22,12 +21,11 @@ main {
 .login {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 30%;
+    margin-top: 10px;
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
     border-radius: 5%;
 }

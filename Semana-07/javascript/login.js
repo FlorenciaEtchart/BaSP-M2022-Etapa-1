@@ -16,7 +16,7 @@ window.onload  = function(){
         } else if (!inputEmail.value.match (regExp)) {
             messageAlert[0].classList.add ('invalid');
             messageAlert[0].classList.remove ('correct');
-            messageAlert[0].innerHTML = 'Must enter a valid email';
+            messageAlert[0].innerHTML = 'Fields are requiered';
         }
     }
     
@@ -86,7 +86,7 @@ window.onload  = function(){
         }
 
         
-    function myRequest (emailValue, passwordValue) {
+    function toLogin (emailValue, passwordValue) {
 
         var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
         fetch (url + '?email=' + emailValue + '&password=' + passwordValue)
@@ -99,10 +99,12 @@ window.onload  = function(){
                 messageAlert[0].innerHTML = inputEmail.value;
                 messageAlert[1].innerHTML = inputPassword.value;
             } else {
-                inputEmail.classList.remove('correct');
-                messageAlert[0].add('invalid');
-                inputPassword.classList.remove('correct');
+                messageAlert[0].classList.add ('invalid');
+                messageAlert[0].classList.remove ('correct');
+                messageAlert[0].innerHTML = 'Must enter a valid email';
                 messageAlert[1].classList.add('invalid');
+                messageAlert[1].classList.remove('correct');
+                messageAlert[1].innerHTML = 'Must enter a valid password';
             }
         })
         .catch(function(error){
@@ -111,7 +113,7 @@ window.onload  = function(){
     }
 
     inputSubmit.onclick= function() {
-        myRequest(inputEmail.value, inputPassword.value);
+        toLogin(inputEmail.value, inputPassword.value);
     }
 }
 
