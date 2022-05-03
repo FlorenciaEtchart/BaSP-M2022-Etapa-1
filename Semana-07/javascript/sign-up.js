@@ -13,6 +13,8 @@
     var regExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     var inputButton = document.getElementById('login-submit');
 
+    // NAME VALIDATION 
+
     function validateName () {
         var numbers = '0123456789';
         var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -46,6 +48,8 @@
         errorMessage[0].classList.remove('correct');
         errorMessage[0].innerHTML = ' ';
     }
+
+    // LAST NAME VALIDATION
 
     function validateSurname () {
         var numbers = '0123456789';
@@ -81,6 +85,8 @@
         errorMessage[1].innerHTML = ' ';
     }
 
+    // ID NUMBER VALIDATION
+
     function validateId () {
         var numbers = '0123456789';
         var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -115,6 +121,8 @@
         errorMessage[2].innerHTML = ' ';
     }
 
+    // DAY OF BIRTH VALIDATION
+
     function validateBirthday() {
         var birthdayValidate = inputDateOfBirth.value;
         var day = birthdayValidate.substring (3, 5);
@@ -140,10 +148,11 @@
             errorMessage[3].innerHTML = ' ';
         }
 
-    function validatePhoneNumber () {
+    // PHONE NUMBER VALIDATION
+
+        function validatePhoneNumber () {
         var numbers = '0123456789';
         var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-        var iChars = 'e!@#$%^&*()+=-[]\\\';,./{}|\":<>?';
         var PhoneValue = inputPhoneNumber.value;
         var onlyNumbers = true;
         var onlyLetters = true;
@@ -151,10 +160,9 @@
         PhoneValue.split('').forEach(function(letter){
             if (numbers.indexOf(letter) == -1) onlyNumbers = false;
             if (letters.indexOf(letter) == -1) onlyLetters = false;
-            if (iChars.indexOf(letter) == -1) iChars = false;
         });
 
-        if (onlyNumbers && !onlyLetters && !iChars && PhoneValue.length >= 10 && PhoneValue.length <= 10) {
+        if (onlyNumbers && !onlyLetters && PhoneValue.length >= 10 && PhoneValue.length <= 10) {
             errorMessage[4].classList.add('correct');
             errorMessage[4].innerHTML = ' ';
         } else if (inputPhoneNumber.value.length <= 0){
@@ -175,6 +183,8 @@
         errorMessage[4].classList.remove('correct');
         errorMessage[4].innerHTML = ' ';
     }
+
+    // ADDRESS VALIDATION
 
     function validateAddress () {
     var alphaNumeric = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -213,6 +223,8 @@
         errorMessage[4].innerHTML = ' ';
     }
 
+    // LOCATION VALIDATION
+
     function validateCity () {
         var alphaNumeric = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
         var numbers = '0123456789';
@@ -250,6 +262,8 @@
         errorMessage[6].innerHTML = ' ';
     }
 
+    // ZIP CODE VALIDATION
+
     function validatePostalCode () {
         var numbers = '0123456789';
         var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -284,6 +298,8 @@
         errorMessage[7].innerHTML = ' ';
     }
 
+    // EMAIL VALIDATION
+
     function validateEmail () {
         var email = inputMail;
         var mailRegEx = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
@@ -309,6 +325,8 @@
         errorMessage[8].classList.remove('correct');
         errorMessage[8].innerHTML = ' ';
     }
+
+    // PASSWORD VALIDATION
 
     function validatePassword () {
         var alphaNumeric = '0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -340,40 +358,26 @@
     inputPsw.onblur = function(){
         validatePassword();
     }
-    
+
     inputPsw.onfocus = function(){
         errorMessage[9].classList.remove('invalid');
         errorMessage[9].classList.remove('correct');
         errorMessage[9].innerHTML = ' ';
     }
 
+    // REPEAT PASSWORD VALIDATION
+
     function validateRepeat () {
-        var alphaNumeric = '0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-        var numbers = '0123456789';
-        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-        var repeatValue = inputRepeatPassword.value;
-        var isAlphaNumeric = true;
-        var onlyNumbers = true;
-        var onlyLetters = true;
+        var pass = inputPsw.value;
+        var rePass = inputRepeatPassword.value;
     
-        repeatValue.split('').forEach(function(letter){
-            if (alphaNumeric.indexOf(letter) == -1) isAlphaNumeric = false;
-            if (numbers.indexOf(letter) == -1) onlyNumbers = false;
-            if (letters.indexOf(letter) == -1) onlyLetters = false;
-        })
-    
-        if (isAlphaNumeric && !onlyNumbers && !onlyLetters && repeatValue.length >=8) {
-            errorMessage[10].classList.add('correct');
-            errorMessage[10].innerHTML = ' ';
-        } else if (inputRepeatPassword.value.length == 0){
-            errorMessage[10].classList.add('invalid');
-            errorMessage[10].innerHTML = 'Fiels are required';
+        if (pass == rePass) {
+            errorMessage [10].classList.add('correct');
         } else {
             errorMessage[10].classList.add('invalid');
             errorMessage[10].innerHTML = 'Must match with password';
         }
     }
-    
         inputRepeatPassword.onblur = function(){
             validateRepeat();
         }
@@ -383,6 +387,40 @@
             errorMessage[9].classList.remove('correct');
             errorMessage[9].innerHTML = ' ';
         }
+
+    // AVOID SPECIAL CHARACTERS
+
+    var invalidChars = ['-', '+', 'e', 'E', '.'];
+
+    inputButton.onclick = function() {
+        validateSubmit();
+    }
+
+    inputPhoneNumber.addEventListener ('keydown', function (e){
+        if (invalidChars.includes (e.key)){
+            e.preventDefault();
+        }
+    })
+
+    inputDni.addEventListener ('keydown', function (e){
+        if (invalidChars.includes (e.key)){
+            e.preventDefault();
+        }
+    })
+
+    inputDateOfBirth.addEventListener ('keydown', function (e){
+        if (invalidChars.includes (e.key)){
+            e.preventDefault();
+        }
+    })
+
+    inputPostalCode.addEventListener ('keydown', function (e){
+        if (invalidChars.includes (e.key)){
+            e.preventDefault();
+        }
+    })
+
+    // UPLOAD DATA TO THE SERVER 
 
     function validateSubmit() {
         var name = inputName.value;
@@ -410,10 +448,6 @@
         }
     }
 
-    inputButton.onclick = function() {
-        validateSubmit();
-    }
-
     function SignUp (
         nameValue,
         lastNameValue,
@@ -425,6 +459,7 @@
         zipValue,
         emailValue,
         passValue,
+        rePassValue,
         url) {
 
         var nameValue = inputName.value;
@@ -437,9 +472,9 @@
         var zipValue = inputPostalCode.value;
         var emailValue = inputMail.value;
         var passValue = inputPsw.value;
+        var rePassValue = inputRepeatPassword.value;
         var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
     
-
         fetch (
             url +
             '?name=' +
@@ -468,30 +503,30 @@
             return response.json();
              })
         .then (function(jsonResponse){
-            alert (jsonResponse.msg);
+            // alert (jsonResponse.msg); also avoid success message, but If I leave it throw an undefined msg for errors.
             if (jsonResponse.success){
                 myStorage ();
                 var isOk =
-                ' Name= ' +
+                'New user= ' +
                 nameValue +
-                ' Last Name= ' +
+                ' ' +
                 lastNameValue +
-                ' Id Number= ' +
+                ' - Id Number= ' +
                 idValue +
-                ' Day of Birth= ' +
+                ' - Day of Birth= ' +
                 dobValue +
-                ' Phone number= ' +
+                ' - Phone number= ' +
                 phoneValue +
-                ' Address= ' +
+                ' - Address= ' +
                 addressValue +
-                ' City= ' +
+                ' - City= ' +
                 cityValue +
-                 'Zip number= ' +
+                ' - Zip number= ' +
                 zipValue +
-                ' Email= ' +
+                ' - Email= ' +
                 emailValue +
-                ' Password= ' +
-                passValue
+                ' - Password= ' +
+                passValue;
                 alert (isOk);
             } else {
                 var errorMsg = ' ';
@@ -501,7 +536,7 @@
             }
             })
             .catch(function (jsonResponse) {
-                alert (jsonResponse.errorMsg);
+                // alert (jsonResponse.errorMsg);
             });
         }
 
@@ -509,7 +544,7 @@
             localStorage.setItem('name', inputName.value);
             localStorage.setItem('lastName', inputLastName.value);
             localStorage.setItem('dni', inputDni.value);
-            localStorage.setItem('birthday', inputDateOfBirth.value);
+            localStorage.setItem('date', inputDateOfBirth.value);
             localStorage.setItem('phone', inputPhoneNumber.value);
             localStorage.setItem('address', inputAddress.value);
             localStorage.setItem('city', inputCity.value);
@@ -519,7 +554,6 @@
 
 
         inputButton.onclick = function(e) {
-            
             var formatDate = inputDateOfBirth.value.split('-');
             var newFormat =
             formatDate.slice(1, 2) +
@@ -527,8 +561,8 @@
             formatDate.slice(2) +
             '/' +
             formatDate.slice(0, 1);
-
-            SignUp(
+            
+                SignUp(
                 inputName.value,
                 inputLastName.value,
                 inputDni.value,
@@ -542,27 +576,29 @@
 
             e.preventDefault();
         }
+ 
+    if (
+        localStorage.getItem('name') != null &&
+        localStorage.getItem('lastName') != null &&
+        localStorage.getItem('dni') != null &&
+        localStorage.getItem('date') != null &&
+        localStorage.getItem('phone') != null &&
+        localStorage.getItem('address') != null &&
+        localStorage.getItem('city') != null &&
+        localStorage.getItem('zip') != null &&
+        localStorage.getItem('email') != null
+    ) {
+        inputName.value = localStorage.getItem('name');
+        inputLastName.value = localStorage.getItem('lastName');
+        inputDni.value = localStorage.getItem('dni');
+        inputDateOfBirth.value = localStorage.getItem('date');
+        inputPhoneNumber.value = localStorage.getItem('phone');
+        inputAddress.value = localStorage.getItem('address');
+        inputCity.value = localStorage.getItem('city');
+        inputPostalCode.value = localStorage.getItem('zip');
+        inputMail.value = localStorage.getItem('email');
+    }
 
-        function save () {
-            if (
-                localStorage.getItem('name') != null &&
-                localStorage.getItem('lastName') != null &&
-                localStorage.getItem('dni') != null &&
-                localStorage.getItem('birthday') != null &&
-                localStorage.getItem('phone') != null &&
-                localStorage.getItem('address') != null &&
-                localStorage.getItem('city') != null &&
-                localStorage.getItem('zip') != null &&
-                localStorage.getItem('email') != null
-            ) {
-                nameValue = localStorage.getItem('name');
-                lastNameValue = localStorage.getItem('lastName');
-                idValue = localStorage.getItem('dni');
-                dobValue = localStorage.getItem('birthday');
-                phoneValue = localStorage.getItem('phone');
-                addressValue= localStorage.getItem('address');
-                cityValue = localStorage.getItem('city');
-                zipValue = localStorage.getItem('zip');
-                emailValue = localStorage.getItem('email');
-            }
-        }
+        
+            
+        
