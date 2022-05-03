@@ -93,7 +93,7 @@
             if (letters.indexOf(letter) == -1) onlyLetters = false;
         });
 
-        if (onlyNumbers && !onlyLetters && idValue.length > 7) {
+        if (onlyNumbers && !onlyLetters && idValue.length >= 7 && idValue.length <= 8) {
             errorMessage[2].classList.add('correct');
             errorMessage[2].innerHTML = ' ';
         } else if (inputDni.value.length == 0){
@@ -117,12 +117,12 @@
 
     function validateBirthday() {
         var birthdayValidate = inputDateOfBirth.value;
-        var day = birthdayValidate.substring (0,2);
-        var month = birthdayValidate.substring (3,5);
+        var day = birthdayValidate.substring (3, 5);
+        var month = birthdayValidate.substring (0, 2);
         var year = birthdayValidate.substring (6,10);
 
         if (birthdayValidate.length !==10 || birthdayValidate.substring(2,3) !=='/' || birthdayValidate.substring(5,6) !=='/'
-         || day <=00 || day > 31 || month <=00 || month > 12 || year <=1900 || year > 2020) {
+         || day <=00 || day > 31 || month <=00 || month > 12 || year <=1910 || year > 2004) {
             errorMessage[3].classList.add('invalid');
             errorMessage[3].innerHTML = 'Must enter a valid date format';
         } else {
@@ -143,6 +143,7 @@
     function validatePhoneNumber () {
         var numbers = '0123456789';
         var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        var iChars = 'e!@#$%^&*()+=-[]\\\';,./{}|\":<>?';
         var PhoneValue = inputPhoneNumber.value;
         var onlyNumbers = true;
         var onlyLetters = true;
@@ -150,9 +151,10 @@
         PhoneValue.split('').forEach(function(letter){
             if (numbers.indexOf(letter) == -1) onlyNumbers = false;
             if (letters.indexOf(letter) == -1) onlyLetters = false;
+            if (iChars.indexOf(letter) == -1) iChars = false;
         });
 
-        if (onlyNumbers && !onlyLetters && PhoneValue.length == 10) {
+        if (onlyNumbers && !onlyLetters && !iChars && PhoneValue.length >= 10 && PhoneValue.length <= 10) {
             errorMessage[4].classList.add('correct');
             errorMessage[4].innerHTML = ' ';
         } else if (inputPhoneNumber.value.length <= 0){
@@ -494,14 +496,12 @@
             } else {
                 var errorMsg = ' ';
                 for(var i= 0;i<jsonResponse.errors.length; i++){
-                    errorMsg += jsonResponse.errors[i].msg + '. - ';
-                } 
-                alert (errorMsg);
+                  errorMsg += jsonResponse.errors[i].msg + '. - ';
+                } alert (errorMsg);
             }
             })
-
-            .catch(function (error) {
-                console.warn('error ', error);
+            .catch(function (jsonResponse) {
+                alert (jsonResponse.errorMsg);
             });
         }
 
@@ -566,37 +566,3 @@
                 emailValue = localStorage.getItem('email');
             }
         }
-    
-
-
-
-
-        // errorMessage[0].classList.add('invalid');
-        // errorMessage[0].innerHTML = 'Must enter more than 3 characteres and only letters';
-        // errorMessage[0].style = "color: #ff0000";
-        // errorMessage[1].classList.add('invalid');
-        // errorMessage[1].innerHTML = 'Must enter more than 3 characteres';
-        // errorMessage[1].style = "color: #ff0000";
-        // errorMessage[2].classList.add('invalid');
-        // errorMessage[2].innerHTML = 'Must enter a valid ID format';
-        // errorMessage[2].style = "color: #ff0000";
-        // errorMessage[3].classList.add('correct');
-        // errorMessage[4].classList.add('invalid');
-        // errorMessage[4].innerHTML = 'Must enter a valid phone number';
-        // errorMessage[4].style = "color: #ff0000";
-        // errorMessage[5].classList.add('invalid');
-        // errorMessage[5].innerHTML = 'Must enter a valid address';
-        // errorMessage[5].style = "color: #ff0000";
-        // errorMessage[6].classList.add('invalid');
-        // errorMessage[6].innerHTML = 'Must enter a valid city';
-        // errorMessage[6].style = "color: #ff0000";
-        // errorMessage[7].classList.add('invalid');
-        // errorMessage[7].innerHTML = 'Must enter a valid postal code';
-        // errorMessage[7].style = "color: #ff0000";
-        // errorMessage[8].classList.add('invalid');
-        // errorMessage[8].innerHTML = 'Must enter a valid email';
-        // errorMessage[8].style = "color: #ff0000";
-        // errorMessage[9].classList.add('invalid');
-        // errorMessage[9].innerHTML = 'Must enter a valid password';
-        // errorMessage[9].style = "color: #ff0000";
-
