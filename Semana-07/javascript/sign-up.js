@@ -469,23 +469,39 @@
             alert (jsonResponse.msg);
             if (jsonResponse.success){
                 myStorage ();
-                errorMessage[0].innerHTML = inputName.value;
-                errorMessage[1].innerHTML = inputLastName.value;
-                errorMessage[2].innerHTML = inputDni.value;
-                errorMessage[3].innerHTML = inputDateOfBirth.value;
-                errorMessage[4].innerHTML = inputPhoneNumber.value;
-                errorMessage[5].innerHTML = inputAddress.value;
-                errorMessage[6].innerHTML = inputCity.value;
-                errorMessage[7].innerHTML = inputPostalCode.value;
-                errorMessage[8].innerHTML = inputMail.value;
-                errorMessage[9].innerHTML = ' ';
+                var isOk =
+                ' Name= ' +
+                nameValue +
+                ' Last Name= ' +
+                lastNameValue +
+                ' Id Number= ' +
+                idValue +
+                ' Day of Birth= ' +
+                dobValue +
+                ' Phone number= ' +
+                phoneValue +
+                ' Address= ' +
+                addressValue +
+                ' City= ' +
+                cityValue +
+                 'Zip number= ' +
+                zipValue +
+                ' Email= ' +
+                emailValue +
+                ' Password= ' +
+                passValue
+                alert (isOk);
             } else {
-                console.log('wrong');
+                var errorMsg = ' ';
+                for(var i= 0;i<jsonResponse.errors.length; i++){
+                    errorMsg += jsonResponse.errors[i].msg + '. - ';
+                } 
+                alert (errorMsg);
             }
             })
 
             .catch(function (error) {
-                console.warn('error', error);
+                console.warn('error ', error);
             });
         }
 
@@ -503,9 +519,7 @@
 
 
         inputButton.onclick = function(e) {
-            e.preventDefault();
-            validateSubmit ();
-
+            
             var formatDate = inputDateOfBirth.value.split('-');
             var newFormat =
             formatDate.slice(1, 2) +
@@ -525,6 +539,8 @@
                 inputPostalCode.value,
                 inputMail.value,
             )
+
+            e.preventDefault();
         }
 
         function save () {
